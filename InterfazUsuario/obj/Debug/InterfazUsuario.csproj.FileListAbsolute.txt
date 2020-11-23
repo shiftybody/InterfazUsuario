@@ -1,0 +1,10 @@
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\bin\Debug\InterfazUsuario.exe.config
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\bin\Debug\InterfazUsuario.exe
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\bin\Debug\InterfazUsuario.pdb
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.csprojAssemblyReference.cache
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.Form1.resources
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.Properties.Resources.resources
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.csproj.GenerateResource.cache
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.csproj.CoreCompileInputs.cache
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.exe
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.pdb
