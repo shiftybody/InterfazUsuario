@@ -10,3 +10,4 @@ C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\Inter
 C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.form_Menu.resources
 C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.form_Login.resources
 C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.form_Registro.resources
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.form_Altas.resources

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace InterfazUsuario
 {
@@ -15,6 +16,25 @@ namespace InterfazUsuario
         public form_Menu()
         {
             InitializeComponent();
+        }
+        private void AbrirForm (object formHijo)
+        {
+            if (this.panel_Contenedor.Controls.Count > 0)
+            {
+                this.panel_Contenedor.Controls.RemoveAt(0);
+            }                     
+                Form fh = formHijo as Form;
+                fh.TopLevel = false;
+                fh.Dock = DockStyle.Fill;
+                this.panel_Contenedor.Controls.Add(fh);
+                this.panel_Contenedor.Tag = fh;
+                fh.Show();
+            
+        }
+
+        private void btn_Crear_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new form_Altas());
         }
     }
 }

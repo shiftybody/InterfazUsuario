@@ -31,18 +31,19 @@ namespace InterfazUsuario
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_menuContenedor = new System.Windows.Forms.Panel();
+            this.btn_logout = new System.Windows.Forms.Button();
+            this.panel_UsuarioContenedor = new System.Windows.Forms.Panel();
+            this.btn_creditos = new System.Windows.Forms.Button();
+            this.btn_modElim = new System.Windows.Forms.Button();
+            this.btn_Crear = new System.Windows.Forms.Button();
+            this.label_userLog = new System.Windows.Forms.Label();
+            this.textBox_userlog = new System.Windows.Forms.TextBox();
+            this.pictureBox_User = new System.Windows.Forms.PictureBox();
+            this.panel_Contenedor = new System.Windows.Forms.Panel();
+            this.panel_menuContenedor.SuspendLayout();
+            this.panel_UsuarioContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -50,129 +51,138 @@ namespace InterfazUsuario
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // panel1
+            // panel_menuContenedor
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 511);
-            this.panel1.TabIndex = 1;
+            this.panel_menuContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel_menuContenedor.Controls.Add(this.btn_creditos);
+            this.panel_menuContenedor.Controls.Add(this.btn_modElim);
+            this.panel_menuContenedor.Controls.Add(this.btn_Crear);
+            this.panel_menuContenedor.Controls.Add(this.panel_UsuarioContenedor);
+            this.panel_menuContenedor.Controls.Add(this.btn_logout);
+            this.panel_menuContenedor.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_menuContenedor.Location = new System.Drawing.Point(0, 0);
+            this.panel_menuContenedor.Name = "panel_menuContenedor";
+            this.panel_menuContenedor.Size = new System.Drawing.Size(197, 511);
+            this.panel_menuContenedor.TabIndex = 1;
             // 
-            // button4
+            // btn_logout
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 461);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 50);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Cerrar Sesión";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Location = new System.Drawing.Point(0, 461);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(197, 50);
+            this.btn_logout.TabIndex = 3;
+            this.btn_logout.Text = "Cerrar Sesión";
+            this.btn_logout.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // panel_UsuarioContenedor
             // 
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 62);
-            this.panel2.TabIndex = 4;
+            this.panel_UsuarioContenedor.Controls.Add(this.textBox_userlog);
+            this.panel_UsuarioContenedor.Controls.Add(this.label_userLog);
+            this.panel_UsuarioContenedor.Controls.Add(this.pictureBox_User);
+            this.panel_UsuarioContenedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_UsuarioContenedor.Location = new System.Drawing.Point(0, 0);
+            this.panel_UsuarioContenedor.Name = "panel_UsuarioContenedor";
+            this.panel_UsuarioContenedor.Size = new System.Drawing.Size(197, 62);
+            this.panel_UsuarioContenedor.TabIndex = 4;
             // 
-            // button3
+            // btn_creditos
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 162);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(197, 50);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Creditos";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseMnemonic = false;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_creditos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.btn_creditos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_creditos.FlatAppearance.BorderSize = 0;
+            this.btn_creditos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_creditos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_creditos.ForeColor = System.Drawing.Color.White;
+            this.btn_creditos.Location = new System.Drawing.Point(0, 162);
+            this.btn_creditos.Name = "btn_creditos";
+            this.btn_creditos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btn_creditos.Size = new System.Drawing.Size(197, 50);
+            this.btn_creditos.TabIndex = 7;
+            this.btn_creditos.Text = "Creditos";
+            this.btn_creditos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_creditos.UseMnemonic = false;
+            this.btn_creditos.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_modElim
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 112);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(197, 50);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Modificar / Eliminar ";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseMnemonic = false;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_modElim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.btn_modElim.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_modElim.FlatAppearance.BorderSize = 0;
+            this.btn_modElim.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_modElim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modElim.ForeColor = System.Drawing.Color.White;
+            this.btn_modElim.Location = new System.Drawing.Point(0, 112);
+            this.btn_modElim.Name = "btn_modElim";
+            this.btn_modElim.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btn_modElim.Size = new System.Drawing.Size(197, 50);
+            this.btn_modElim.TabIndex = 6;
+            this.btn_modElim.Text = "Modificar / Eliminar ";
+            this.btn_modElim.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_modElim.UseMnemonic = false;
+            this.btn_modElim.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_Crear
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 62);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(197, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Crear";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Crear.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Crear.FlatAppearance.BorderSize = 0;
+            this.btn_Crear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Crear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Crear.ForeColor = System.Drawing.Color.White;
+            this.btn_Crear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Crear.Location = new System.Drawing.Point(0, 62);
+            this.btn_Crear.Name = "btn_Crear";
+            this.btn_Crear.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btn_Crear.Size = new System.Drawing.Size(197, 50);
+            this.btn_Crear.TabIndex = 5;
+            this.btn_Crear.Text = "Crear";
+            this.btn_Crear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Crear.UseVisualStyleBackColor = false;
+            this.btn_Crear.Click += new System.EventHandler(this.btn_Crear_Click);
             // 
-            // pictureBox1
+            // label_userLog
             // 
-            this.pictureBox1.Image = global::InterfazUsuario.Properties.Resources.usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label_userLog.AutoSize = true;
+            this.label_userLog.ForeColor = System.Drawing.Color.White;
+            this.label_userLog.Location = new System.Drawing.Point(55, 26);
+            this.label_userLog.Name = "label_userLog";
+            this.label_userLog.Size = new System.Drawing.Size(46, 13);
+            this.label_userLog.TabIndex = 1;
+            this.label_userLog.Text = "Usuario:";
             // 
-            // label1
+            // textBox_userlog
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(55, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Usuario:";
+            this.textBox_userlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.textBox_userlog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_userlog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_userlog.ForeColor = System.Drawing.Color.White;
+            this.textBox_userlog.Location = new System.Drawing.Point(103, 26);
+            this.textBox_userlog.Name = "textBox_userlog";
+            this.textBox_userlog.Size = new System.Drawing.Size(90, 13);
+            this.textBox_userlog.TabIndex = 2;
+            this.textBox_userlog.Text = "Admin";
             // 
-            // textBox1
+            // pictureBox_User
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(103, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 13);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Admin";
+            this.pictureBox_User.Image = global::InterfazUsuario.Properties.Resources.usuario;
+            this.pictureBox_User.Location = new System.Drawing.Point(25, 21);
+            this.pictureBox_User.Name = "pictureBox_User";
+            this.pictureBox_User.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_User.TabIndex = 0;
+            this.pictureBox_User.TabStop = false;
+            // 
+            // panel_Contenedor
+            // 
+            this.panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Contenedor.Location = new System.Drawing.Point(197, 0);
+            this.panel_Contenedor.Name = "panel_Contenedor";
+            this.panel_Contenedor.Size = new System.Drawing.Size(703, 511);
+            this.panel_Contenedor.TabIndex = 2;
             // 
             // form_Menu
             // 
@@ -180,13 +190,15 @@ namespace InterfazUsuario
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(900, 511);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_Contenedor);
+            this.Controls.Add(this.panel_menuContenedor);
             this.Name = "form_Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú principal";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_menuContenedor.ResumeLayout(false);
+            this.panel_UsuarioContenedor.ResumeLayout(false);
+            this.panel_UsuarioContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -194,14 +206,15 @@ namespace InterfazUsuario
         #endregion
 
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel_menuContenedor;
+        private System.Windows.Forms.Button btn_creditos;
+        private System.Windows.Forms.Button btn_modElim;
+        private System.Windows.Forms.Button btn_Crear;
+        private System.Windows.Forms.Panel panel_UsuarioContenedor;
+        private System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.PictureBox pictureBox_User;
+        private System.Windows.Forms.TextBox textBox_userlog;
+        private System.Windows.Forms.Label label_userLog;
+        private System.Windows.Forms.Panel panel_Contenedor;
     }
 }
