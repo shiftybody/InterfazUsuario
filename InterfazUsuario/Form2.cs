@@ -36,5 +36,10 @@ namespace InterfazUsuario
         {
             AbrirForm(new form_Altas());
         }
+
+        private void panel_Contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
