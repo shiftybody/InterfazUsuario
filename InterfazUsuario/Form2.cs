@@ -32,7 +32,7 @@ namespace InterfazUsuario
             
         }
 
-        private void btn_Crear_Click(object sender, EventArgs e)
+        private void btn_Crear_Click(object sender, EventArgs e) //este es el btnMenu_Crear
         {
             AbrirForm(new form_Altas());
         }
@@ -40,6 +40,16 @@ namespace InterfazUsuario
         private void panel_Contenedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnMenu_modElim_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new form_modBajas()); 
+        }
+
+        private void btnMenu_creditos_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new form_Creditos()); 
         }
     }
 }

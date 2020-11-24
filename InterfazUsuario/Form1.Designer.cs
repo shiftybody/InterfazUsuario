@@ -29,31 +29,31 @@ namespace InterfazUsuario
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_Login = new System.Windows.Forms.Button();
+            this.btnLog_Login = new System.Windows.Forms.Button();
             this.label_Usuario = new System.Windows.Forms.Label();
             this.label_Contraseña = new System.Windows.Forms.Label();
-            this.linkLabel_RecuperarPass = new System.Windows.Forms.LinkLabel();
-            this.textBox_User = new System.Windows.Forms.TextBox();
-            this.textBox_Password = new System.Windows.Forms.TextBox();
-            this.btn_Registrar = new System.Windows.Forms.Button();
-            this.label_preguntaPass = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Salir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.linkLabelLog_RecuperarPass = new System.Windows.Forms.LinkLabel();
+            this.textBoxLog_User = new System.Windows.Forms.TextBox();
+            this.textBoxLog_Password = new System.Windows.Forms.TextBox();
+            this.btnLog_Registrar = new System.Windows.Forms.Button();
+            this.labelLog_preguntaPass = new System.Windows.Forms.Label();
+            this.btnLog_Salir = new System.Windows.Forms.Button();
+            this.pictureBoxLog_Imagen = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLog_Imagen)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_Login
+            // btnLog_Login
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(0)))), ((int)(((byte)(32)))));
-            this.btn_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(71, 356);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(224, 42);
-            this.btn_Login.TabIndex = 0;
-            this.btn_Login.Text = "INICIAR SESION";
-            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btnLog_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(0)))), ((int)(((byte)(32)))));
+            this.btnLog_Login.FlatAppearance.BorderSize = 0;
+            this.btnLog_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLog_Login.ForeColor = System.Drawing.Color.White;
+            this.btnLog_Login.Location = new System.Drawing.Point(71, 356);
+            this.btnLog_Login.Name = "btnLog_Login";
+            this.btnLog_Login.Size = new System.Drawing.Size(224, 42);
+            this.btnLog_Login.TabIndex = 0;
+            this.btnLog_Login.Text = "INICIAR SESION";
+            this.btnLog_Login.UseVisualStyleBackColor = false;
             // 
             // label_Usuario
             // 
@@ -75,88 +75,88 @@ namespace InterfazUsuario
             this.label_Contraseña.TabIndex = 3;
             this.label_Contraseña.Text = "Contraseña";
             // 
-            // linkLabel_RecuperarPass
+            // linkLabelLog_RecuperarPass
             // 
-            this.linkLabel_RecuperarPass.AutoSize = true;
-            this.linkLabel_RecuperarPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_RecuperarPass.LinkColor = System.Drawing.SystemColors.Window;
-            this.linkLabel_RecuperarPass.Location = new System.Drawing.Point(227, 462);
-            this.linkLabel_RecuperarPass.Name = "linkLabel_RecuperarPass";
-            this.linkLabel_RecuperarPass.Size = new System.Drawing.Size(67, 13);
-            this.linkLabel_RecuperarPass.TabIndex = 4;
-            this.linkLabel_RecuperarPass.TabStop = true;
-            this.linkLabel_RecuperarPass.Text = "Entra aquí";
+            this.linkLabelLog_RecuperarPass.AutoSize = true;
+            this.linkLabelLog_RecuperarPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLog_RecuperarPass.LinkColor = System.Drawing.SystemColors.Window;
+            this.linkLabelLog_RecuperarPass.Location = new System.Drawing.Point(227, 462);
+            this.linkLabelLog_RecuperarPass.Name = "linkLabelLog_RecuperarPass";
+            this.linkLabelLog_RecuperarPass.Size = new System.Drawing.Size(67, 13);
+            this.linkLabelLog_RecuperarPass.TabIndex = 4;
+            this.linkLabelLog_RecuperarPass.TabStop = true;
+            this.linkLabelLog_RecuperarPass.Text = "Entra aquí";
             // 
-            // textBox_User
+            // textBoxLog_User
             // 
-            this.textBox_User.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxLog_User.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.textBox_User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_User.ForeColor = System.Drawing.Color.White;
-            this.textBox_User.Location = new System.Drawing.Point(72, 237);
-            this.textBox_User.Name = "textBox_User";
-            this.textBox_User.Size = new System.Drawing.Size(224, 22);
-            this.textBox_User.TabIndex = 5;
-            this.textBox_User.TextChanged += new System.EventHandler(this.textBox_User_TextChanged);
+            this.textBoxLog_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.textBoxLog_User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLog_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLog_User.ForeColor = System.Drawing.Color.White;
+            this.textBoxLog_User.Location = new System.Drawing.Point(72, 237);
+            this.textBoxLog_User.Name = "textBoxLog_User";
+            this.textBoxLog_User.Size = new System.Drawing.Size(224, 22);
+            this.textBoxLog_User.TabIndex = 5;
+            this.textBoxLog_User.TextChanged += new System.EventHandler(this.textBox_User_TextChanged);
             // 
-            // textBox_Password
+            // textBoxLog_Password
             // 
-            this.textBox_Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.textBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Password.ForeColor = System.Drawing.Color.White;
-            this.textBox_Password.Location = new System.Drawing.Point(71, 288);
-            this.textBox_Password.Name = "textBox_Password";
-            this.textBox_Password.Size = new System.Drawing.Size(224, 22);
-            this.textBox_Password.TabIndex = 6;
-            this.textBox_Password.UseSystemPasswordChar = true;
-            this.textBox_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
+            this.textBoxLog_Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.textBoxLog_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLog_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLog_Password.ForeColor = System.Drawing.Color.White;
+            this.textBoxLog_Password.Location = new System.Drawing.Point(71, 288);
+            this.textBoxLog_Password.Name = "textBoxLog_Password";
+            this.textBoxLog_Password.Size = new System.Drawing.Size(224, 22);
+            this.textBoxLog_Password.TabIndex = 6;
+            this.textBoxLog_Password.UseSystemPasswordChar = true;
+            this.textBoxLog_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
             // 
-            // btn_Registrar
+            // btnLog_Registrar
             // 
-            this.btn_Registrar.Location = new System.Drawing.Point(71, 404);
-            this.btn_Registrar.Name = "btn_Registrar";
-            this.btn_Registrar.Size = new System.Drawing.Size(224, 42);
-            this.btn_Registrar.TabIndex = 7;
-            this.btn_Registrar.Text = "REGISTRARSE";
-            this.btn_Registrar.UseVisualStyleBackColor = true;
+            this.btnLog_Registrar.Location = new System.Drawing.Point(71, 404);
+            this.btnLog_Registrar.Name = "btnLog_Registrar";
+            this.btnLog_Registrar.Size = new System.Drawing.Size(224, 42);
+            this.btnLog_Registrar.TabIndex = 7;
+            this.btnLog_Registrar.Text = "REGISTRARSE";
+            this.btnLog_Registrar.UseVisualStyleBackColor = true;
             // 
-            // label_preguntaPass
+            // labelLog_preguntaPass
             // 
-            this.label_preguntaPass.AutoSize = true;
-            this.label_preguntaPass.ForeColor = System.Drawing.Color.White;
-            this.label_preguntaPass.Location = new System.Drawing.Point(71, 462);
-            this.label_preguntaPass.Name = "label_preguntaPass";
-            this.label_preguntaPass.Size = new System.Drawing.Size(154, 13);
-            this.label_preguntaPass.TabIndex = 8;
-            this.label_preguntaPass.Text = "¿ Has olvidado la contraseña ?";
-            this.label_preguntaPass.Click += new System.EventHandler(this.label3_Click);
+            this.labelLog_preguntaPass.AutoSize = true;
+            this.labelLog_preguntaPass.ForeColor = System.Drawing.Color.White;
+            this.labelLog_preguntaPass.Location = new System.Drawing.Point(71, 462);
+            this.labelLog_preguntaPass.Name = "labelLog_preguntaPass";
+            this.labelLog_preguntaPass.Size = new System.Drawing.Size(154, 13);
+            this.labelLog_preguntaPass.TabIndex = 8;
+            this.labelLog_preguntaPass.Text = "¿ Has olvidado la contraseña ?";
+            this.labelLog_preguntaPass.Click += new System.EventHandler(this.label3_Click);
             // 
-            // pictureBox1
+            // btnLog_Salir
             // 
-            this.pictureBox1.Image = global::InterfazUsuario.Properties.Resources.CandadoCerrado;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btnLog_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.btnLog_Salir.FlatAppearance.BorderSize = 0;
+            this.btnLog_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLog_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog_Salir.ForeColor = System.Drawing.Color.White;
+            this.btnLog_Salir.Location = new System.Drawing.Point(141, 525);
+            this.btnLog_Salir.Name = "btnLog_Salir";
+            this.btnLog_Salir.Size = new System.Drawing.Size(75, 23);
+            this.btnLog_Salir.TabIndex = 9;
+            this.btnLog_Salir.Text = "SALIR";
+            this.btnLog_Salir.UseVisualStyleBackColor = false;
             // 
-            // btn_Salir
+            // pictureBoxLog_Imagen
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.btn_Salir.FlatAppearance.BorderSize = 0;
-            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Salir.ForeColor = System.Drawing.Color.White;
-            this.btn_Salir.Location = new System.Drawing.Point(141, 525);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(75, 23);
-            this.btn_Salir.TabIndex = 9;
-            this.btn_Salir.Text = "SALIR";
-            this.btn_Salir.UseVisualStyleBackColor = false;
+            this.pictureBoxLog_Imagen.Image = global::InterfazUsuario.Properties.Resources.CandadoCerrado;
+            this.pictureBoxLog_Imagen.Location = new System.Drawing.Point(123, 66);
+            this.pictureBoxLog_Imagen.Name = "pictureBoxLog_Imagen";
+            this.pictureBoxLog_Imagen.Size = new System.Drawing.Size(124, 120);
+            this.pictureBoxLog_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLog_Imagen.TabIndex = 1;
+            this.pictureBoxLog_Imagen.TabStop = false;
             // 
             // form_Login
             // 
@@ -165,20 +165,20 @@ namespace InterfazUsuario
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(358, 572);
-            this.Controls.Add(this.btn_Salir);
-            this.Controls.Add(this.label_preguntaPass);
-            this.Controls.Add(this.btn_Registrar);
-            this.Controls.Add(this.textBox_Password);
-            this.Controls.Add(this.textBox_User);
-            this.Controls.Add(this.linkLabel_RecuperarPass);
+            this.Controls.Add(this.btnLog_Salir);
+            this.Controls.Add(this.labelLog_preguntaPass);
+            this.Controls.Add(this.btnLog_Registrar);
+            this.Controls.Add(this.textBoxLog_Password);
+            this.Controls.Add(this.textBoxLog_User);
+            this.Controls.Add(this.linkLabelLog_RecuperarPass);
             this.Controls.Add(this.label_Contraseña);
             this.Controls.Add(this.label_Usuario);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.pictureBoxLog_Imagen);
+            this.Controls.Add(this.btnLog_Login);
             this.Name = "form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLog_Imagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,16 +186,16 @@ namespace InterfazUsuario
 
         #endregion
 
-        private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnLog_Login;
+        private System.Windows.Forms.PictureBox pictureBoxLog_Imagen;
         private System.Windows.Forms.Label label_Usuario;
         private System.Windows.Forms.Label label_Contraseña;
-        private System.Windows.Forms.LinkLabel linkLabel_RecuperarPass;
-        private System.Windows.Forms.Button btn_Registrar;
-        private System.Windows.Forms.Label label_preguntaPass;
-        private System.Windows.Forms.TextBox textBox_User;
-        private System.Windows.Forms.Button btn_Salir;
-        private System.Windows.Forms.TextBox textBox_Password;
+        private System.Windows.Forms.LinkLabel linkLabelLog_RecuperarPass;
+        private System.Windows.Forms.Button btnLog_Registrar;
+        private System.Windows.Forms.Label labelLog_preguntaPass;
+        private System.Windows.Forms.TextBox textBoxLog_User;
+        private System.Windows.Forms.Button btnLog_Salir;
+        private System.Windows.Forms.TextBox textBoxLog_Password;
     }
 }
 

@@ -30,6 +30,7 @@ namespace InterfazUsuario
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox_PasswordRegister = new System.Windows.Forms.TextBox();
             this.textBox_UserRegister = new System.Windows.Forms.TextBox();
             this.label_ContraseñaRegistro = new System.Windows.Forms.Label();
@@ -38,8 +39,7 @@ namespace InterfazUsuario
             this.label_ContraseñaConfirmada = new System.Windows.Forms.Label();
             this.btn_Registrar = new System.Windows.Forms.Button();
             this.textBox_alertMessage = new System.Windows.Forms.TextBox();
-            this.btn_regrearLogin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_regresarLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,16 @@ namespace InterfazUsuario
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(185, 266);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::InterfazUsuario.Properties.Resources.verificar__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // textBox_PasswordRegister
             // 
@@ -142,28 +152,18 @@ namespace InterfazUsuario
             this.textBox_alertMessage.TabIndex = 14;
             this.textBox_alertMessage.Visible = false;
             // 
-            // btn_regrearLogin
+            // btn_regresarLogin
             // 
-            this.btn_regrearLogin.FlatAppearance.BorderSize = 0;
-            this.btn_regrearLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_regrearLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_regrearLogin.ForeColor = System.Drawing.Color.White;
-            this.btn_regrearLogin.Location = new System.Drawing.Point(211, 206);
-            this.btn_regrearLogin.Name = "btn_regrearLogin";
-            this.btn_regrearLogin.Size = new System.Drawing.Size(67, 37);
-            this.btn_regrearLogin.TabIndex = 15;
-            this.btn_regrearLogin.Text = "Volver";
-            this.btn_regrearLogin.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::InterfazUsuario.Properties.Resources.verificar__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btn_regresarLogin.FlatAppearance.BorderSize = 0;
+            this.btn_regresarLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_regresarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_regresarLogin.ForeColor = System.Drawing.Color.White;
+            this.btn_regresarLogin.Location = new System.Drawing.Point(211, 206);
+            this.btn_regresarLogin.Name = "btn_regresarLogin";
+            this.btn_regresarLogin.Size = new System.Drawing.Size(67, 37);
+            this.btn_regresarLogin.TabIndex = 15;
+            this.btn_regresarLogin.Text = "Volver";
+            this.btn_regresarLogin.UseVisualStyleBackColor = true;
             // 
             // form_Registro
             // 
@@ -171,7 +171,7 @@ namespace InterfazUsuario
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(724, 266);
-            this.Controls.Add(this.btn_regrearLogin);
+            this.Controls.Add(this.btn_regresarLogin);
             this.Controls.Add(this.textBox_alertMessage);
             this.Controls.Add(this.btn_Registrar);
             this.Controls.Add(this.label_ContraseñaConfirmada);
@@ -204,6 +204,6 @@ namespace InterfazUsuario
         private System.Windows.Forms.Label label_ContraseñaConfirmada;
         private System.Windows.Forms.Button btn_Registrar;
         private System.Windows.Forms.TextBox textBox_alertMessage;
-        private System.Windows.Forms.Button btn_regrearLogin;
+        private System.Windows.Forms.Button btn_regresarLogin;
     }
 }

@@ -29,180 +29,188 @@ namespace InterfazUsuario
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            this.layerAltas_Id = new System.Windows.Forms.Label();
+            this.textBoxAltas_ID = new System.Windows.Forms.TextBox();
+            this.monthCalendarAltas_Date = new System.Windows.Forms.MonthCalendar();
+            this.labelAltas_Preci = new System.Windows.Forms.Label();
+            this.labelAltas_Evap = new System.Windows.Forms.Label();
+            this.labelAltas_Tmax = new System.Windows.Forms.Label();
+            this.labelAltas_Tmin = new System.Windows.Forms.Label();
+            this.textBoxAltas_Tmax = new System.Windows.Forms.NumericUpDown();
+            this.textBoxAltas_Tmin = new System.Windows.Forms.NumericUpDown();
+            this.labelAltas_Date = new System.Windows.Forms.Label();
+            this.textBoxAltas_Evap = new System.Windows.Forms.NumericUpDown();
+            this.textBoxAltas_Preci = new System.Windows.Forms.NumericUpDown();
+            this.btnAltas_Agregar = new System.Windows.Forms.Button();
+            this.labelAltas_Message = new System.Windows.Forms.Label();
+            this.textBoxAltas_Date = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Tmax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Tmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Evap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Preci)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // layerAltas_Id
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.layerAltas_Id.AutoSize = true;
+            this.layerAltas_Id.Location = new System.Drawing.Point(161, 86);
+            this.layerAltas_Id.Name = "layerAltas_Id";
+            this.layerAltas_Id.Size = new System.Drawing.Size(18, 13);
+            this.layerAltas_Id.TabIndex = 0;
+            this.layerAltas_Id.Text = "ID";
             // 
-            // textBox1
+            // textBoxAltas_ID
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBoxAltas_ID.Location = new System.Drawing.Point(195, 83);
+            this.textBoxAltas_ID.Name = "textBoxAltas_ID";
+            this.textBoxAltas_ID.Size = new System.Drawing.Size(131, 20);
+            this.textBoxAltas_ID.TabIndex = 1;
             // 
-            // monthCalendar1
+            // monthCalendarAltas_Date
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(78, 160);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 4;
+            this.monthCalendarAltas_Date.Location = new System.Drawing.Point(78, 191);
+            this.monthCalendarAltas_Date.Name = "monthCalendarAltas_Date";
+            this.monthCalendarAltas_Date.TabIndex = 4;
             // 
-            // label2
+            // labelAltas_Preci
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(379, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Precipitación";
+            this.labelAltas_Preci.AutoSize = true;
+            this.labelAltas_Preci.Location = new System.Drawing.Point(379, 83);
+            this.labelAltas_Preci.Name = "labelAltas_Preci";
+            this.labelAltas_Preci.Size = new System.Drawing.Size(68, 13);
+            this.labelAltas_Preci.TabIndex = 7;
+            this.labelAltas_Preci.Text = "Precipitación";
             // 
-            // label3
+            // labelAltas_Evap
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(380, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Evaporación";
+            this.labelAltas_Evap.AutoSize = true;
+            this.labelAltas_Evap.Location = new System.Drawing.Point(380, 143);
+            this.labelAltas_Evap.Name = "labelAltas_Evap";
+            this.labelAltas_Evap.Size = new System.Drawing.Size(67, 13);
+            this.labelAltas_Evap.TabIndex = 8;
+            this.labelAltas_Evap.Text = "Evaporación";
             // 
-            // label4
+            // labelAltas_Tmax
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(380, 193);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Temperatura Máxima";
+            this.labelAltas_Tmax.AutoSize = true;
+            this.labelAltas_Tmax.Location = new System.Drawing.Point(380, 193);
+            this.labelAltas_Tmax.Name = "labelAltas_Tmax";
+            this.labelAltas_Tmax.Size = new System.Drawing.Size(106, 13);
+            this.labelAltas_Tmax.TabIndex = 9;
+            this.labelAltas_Tmax.Text = "Temperatura Máxima";
             // 
-            // label5
+            // labelAltas_Tmin
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(380, 247);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Temperatura Mínima";
+            this.labelAltas_Tmin.AutoSize = true;
+            this.labelAltas_Tmin.Location = new System.Drawing.Point(380, 247);
+            this.labelAltas_Tmin.Name = "labelAltas_Tmin";
+            this.labelAltas_Tmin.Size = new System.Drawing.Size(105, 13);
+            this.labelAltas_Tmin.TabIndex = 10;
+            this.labelAltas_Tmin.Text = "Temperatura Mínima";
             // 
-            // numericUpDown1
+            // textBoxAltas_Tmax
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(501, 191);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.textBoxAltas_Tmax.Location = new System.Drawing.Point(501, 191);
+            this.textBoxAltas_Tmax.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.textBoxAltas_Tmax.Minimum = new decimal(new int[] {
             1000,
             0,
             0,
             -2147483648});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(160, 20);
-            this.numericUpDown1.TabIndex = 11;
+            this.textBoxAltas_Tmax.Name = "textBoxAltas_Tmax";
+            this.textBoxAltas_Tmax.Size = new System.Drawing.Size(160, 20);
+            this.textBoxAltas_Tmax.TabIndex = 11;
             // 
-            // numericUpDown2
+            // textBoxAltas_Tmin
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(501, 245);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.textBoxAltas_Tmin.Location = new System.Drawing.Point(501, 245);
+            this.textBoxAltas_Tmin.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.textBoxAltas_Tmin.Minimum = new decimal(new int[] {
             1000,
             0,
             0,
             -2147483648});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(160, 20);
-            this.numericUpDown2.TabIndex = 12;
+            this.textBoxAltas_Tmin.Name = "textBoxAltas_Tmin";
+            this.textBoxAltas_Tmin.Size = new System.Drawing.Size(160, 20);
+            this.textBoxAltas_Tmin.TabIndex = 12;
             // 
-            // label6
+            // labelAltas_Date
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(183, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Fecha";
+            this.labelAltas_Date.AutoSize = true;
+            this.labelAltas_Date.Location = new System.Drawing.Point(183, 140);
+            this.labelAltas_Date.Name = "labelAltas_Date";
+            this.labelAltas_Date.Size = new System.Drawing.Size(37, 13);
+            this.labelAltas_Date.TabIndex = 13;
+            this.labelAltas_Date.Text = "Fecha";
             // 
-            // numericUpDown3
+            // textBoxAltas_Evap
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(501, 140);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.textBoxAltas_Evap.Location = new System.Drawing.Point(501, 140);
+            this.textBoxAltas_Evap.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.textBoxAltas_Evap.Minimum = new decimal(new int[] {
             1000,
             0,
             0,
             -2147483648});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(160, 20);
-            this.numericUpDown3.TabIndex = 15;
+            this.textBoxAltas_Evap.Name = "textBoxAltas_Evap";
+            this.textBoxAltas_Evap.Size = new System.Drawing.Size(160, 20);
+            this.textBoxAltas_Evap.TabIndex = 15;
             // 
-            // numericUpDown4
+            // textBoxAltas_Preci
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(501, 83);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.textBoxAltas_Preci.Location = new System.Drawing.Point(501, 83);
+            this.textBoxAltas_Preci.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
+            this.textBoxAltas_Preci.Minimum = new decimal(new int[] {
             1000,
             0,
             0,
             -2147483648});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(160, 20);
-            this.numericUpDown4.TabIndex = 16;
+            this.textBoxAltas_Preci.Name = "textBoxAltas_Preci";
+            this.textBoxAltas_Preci.Size = new System.Drawing.Size(160, 20);
+            this.textBoxAltas_Preci.TabIndex = 16;
             // 
-            // button1
+            // btnAltas_Agregar
             // 
-            this.button1.Location = new System.Drawing.Point(521, 366);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 45);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "AGREGAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAltas_Agregar.Location = new System.Drawing.Point(521, 366);
+            this.btnAltas_Agregar.Name = "btnAltas_Agregar";
+            this.btnAltas_Agregar.Size = new System.Drawing.Size(188, 45);
+            this.btnAltas_Agregar.TabIndex = 17;
+            this.btnAltas_Agregar.Text = "AGREGAR";
+            this.btnAltas_Agregar.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // labelAltas_Message
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(436, 309);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(189, 16);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Mensaje de Error invisible";
-            this.label7.Visible = false;
+            this.labelAltas_Message.AutoSize = true;
+            this.labelAltas_Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltas_Message.Location = new System.Drawing.Point(436, 309);
+            this.labelAltas_Message.Name = "labelAltas_Message";
+            this.labelAltas_Message.Size = new System.Drawing.Size(189, 16);
+            this.labelAltas_Message.TabIndex = 18;
+            this.labelAltas_Message.Text = "Mensaje de Error invisible";
+            this.labelAltas_Message.Visible = false;
+            // 
+            // textBoxAltas_Date
+            // 
+            this.textBoxAltas_Date.Location = new System.Drawing.Point(152, 162);
+            this.textBoxAltas_Date.Name = "textBoxAltas_Date";
+            this.textBoxAltas_Date.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAltas_Date.TabIndex = 19;
             // 
             // form_Altas
             // 
@@ -210,28 +218,29 @@ namespace InterfazUsuario
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(755, 450);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxAltas_Date);
+            this.Controls.Add(this.labelAltas_Message);
+            this.Controls.Add(this.btnAltas_Agregar);
+            this.Controls.Add(this.textBoxAltas_Preci);
+            this.Controls.Add(this.textBoxAltas_Evap);
+            this.Controls.Add(this.labelAltas_Date);
+            this.Controls.Add(this.textBoxAltas_Tmin);
+            this.Controls.Add(this.textBoxAltas_Tmax);
+            this.Controls.Add(this.labelAltas_Tmin);
+            this.Controls.Add(this.labelAltas_Tmax);
+            this.Controls.Add(this.labelAltas_Evap);
+            this.Controls.Add(this.labelAltas_Preci);
+            this.Controls.Add(this.monthCalendarAltas_Date);
+            this.Controls.Add(this.textBoxAltas_ID);
+            this.Controls.Add(this.layerAltas_Id);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_Altas";
             this.Text = "Altas";
             this.Load += new System.EventHandler(this.form_Altas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Tmax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Tmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Evap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Preci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,19 +248,20 @@ namespace InterfazUsuario
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label layerAltas_Id;
+        private System.Windows.Forms.TextBox textBoxAltas_ID;
+        private System.Windows.Forms.MonthCalendar monthCalendarAltas_Date;
+        private System.Windows.Forms.Label labelAltas_Preci;
+        private System.Windows.Forms.Label labelAltas_Evap;
+        private System.Windows.Forms.Label labelAltas_Tmax;
+        private System.Windows.Forms.Label labelAltas_Tmin;
+        private System.Windows.Forms.NumericUpDown textBoxAltas_Tmax;
+        private System.Windows.Forms.NumericUpDown textBoxAltas_Tmin;
+        private System.Windows.Forms.Label labelAltas_Date;
+        private System.Windows.Forms.NumericUpDown textBoxAltas_Evap;
+        private System.Windows.Forms.NumericUpDown textBoxAltas_Preci;
+        private System.Windows.Forms.Button btnAltas_Agregar;
+        private System.Windows.Forms.Label labelAltas_Message;
+        private System.Windows.Forms.TextBox textBoxAltas_Date;
     }
 }

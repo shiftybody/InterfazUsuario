@@ -15,10 +15,10 @@ namespace InterfazUsuario
         public form_Login()
         {
             InitializeComponent();
-            this.textBox_User.AutoSize = false;
-            this.textBox_User.Size = new System.Drawing.Size(224, 30);
-            this.textBox_Password.AutoSize = false;
-            this.textBox_Password.Size = new System.Drawing.Size(224, 30);
+            this.textBoxLog_User.AutoSize = false;
+            this.textBoxLog_User.Size = new System.Drawing.Size(224, 30);
+            this.textBoxLog_Password.AutoSize = false;
+            this.textBoxLog_Password.Size = new System.Drawing.Size(224, 30);
         }
 
         private void textBox_User_TextChanged(object sender, EventArgs e)
