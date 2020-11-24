@@ -39,6 +39,7 @@ namespace InterfazUsuario
             this.labelLog_preguntaPass = new System.Windows.Forms.Label();
             this.btnLog_Salir = new System.Windows.Forms.Button();
             this.pictureBoxLog_Imagen = new System.Windows.Forms.PictureBox();
+            this.labelLog_Message = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLog_Imagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@ namespace InterfazUsuario
             this.btnLog_Login.TabIndex = 0;
             this.btnLog_Login.Text = "INICIAR SESION";
             this.btnLog_Login.UseVisualStyleBackColor = false;
+            this.btnLog_Login.Click += new System.EventHandler(this.btnLog_Login_Click);
             // 
             // label_Usuario
             // 
@@ -89,13 +91,12 @@ namespace InterfazUsuario
             // 
             // textBoxLog_User
             // 
-            this.textBoxLog_User.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxLog_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.textBoxLog_User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxLog_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLog_User.ForeColor = System.Drawing.Color.White;
             this.textBoxLog_User.Location = new System.Drawing.Point(72, 237);
+            this.textBoxLog_User.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.textBoxLog_User.Name = "textBoxLog_User";
             this.textBoxLog_User.Size = new System.Drawing.Size(224, 22);
             this.textBoxLog_User.TabIndex = 5;
@@ -122,6 +123,7 @@ namespace InterfazUsuario
             this.btnLog_Registrar.TabIndex = 7;
             this.btnLog_Registrar.Text = "REGISTRARSE";
             this.btnLog_Registrar.UseVisualStyleBackColor = true;
+            this.btnLog_Registrar.Click += new System.EventHandler(this.btnLog_Registrar_Click);
             // 
             // labelLog_preguntaPass
             // 
@@ -147,6 +149,7 @@ namespace InterfazUsuario
             this.btnLog_Salir.TabIndex = 9;
             this.btnLog_Salir.Text = "SALIR";
             this.btnLog_Salir.UseVisualStyleBackColor = false;
+            this.btnLog_Salir.Click += new System.EventHandler(this.btnLog_Salir_Click);
             // 
             // pictureBoxLog_Imagen
             // 
@@ -158,6 +161,19 @@ namespace InterfazUsuario
             this.pictureBoxLog_Imagen.TabIndex = 1;
             this.pictureBoxLog_Imagen.TabStop = false;
             // 
+            // labelLog_Message
+            // 
+            this.labelLog_Message.AutoSize = true;
+            this.labelLog_Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLog_Message.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.labelLog_Message.Location = new System.Drawing.Point(48, 326);
+            this.labelLog_Message.Name = "labelLog_Message";
+            this.labelLog_Message.Size = new System.Drawing.Size(268, 15);
+            this.labelLog_Message.TabIndex = 10;
+            this.labelLog_Message.Text = "PRUEBE:  usuario  \"admin\"   contraseña: \"1234\"";
+            this.labelLog_Message.Visible = false;
+            this.labelLog_Message.Click += new System.EventHandler(this.labelLog_Message_Click);
+            // 
             // form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +181,7 @@ namespace InterfazUsuario
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(358, 572);
+            this.Controls.Add(this.labelLog_Message);
             this.Controls.Add(this.btnLog_Salir);
             this.Controls.Add(this.labelLog_preguntaPass);
             this.Controls.Add(this.btnLog_Registrar);
@@ -196,6 +213,7 @@ namespace InterfazUsuario
         private System.Windows.Forms.TextBox textBoxLog_User;
         private System.Windows.Forms.Button btnLog_Salir;
         private System.Windows.Forms.TextBox textBoxLog_Password;
+        private System.Windows.Forms.Label labelLog_Message;
     }
 }
 

@@ -140,9 +140,11 @@ namespace InterfazUsuario
             this.textBoxMenu_userlog.ForeColor = System.Drawing.Color.White;
             this.textBoxMenu_userlog.Location = new System.Drawing.Point(103, 26);
             this.textBoxMenu_userlog.Name = "textBoxMenu_userlog";
+            this.textBoxMenu_userlog.ReadOnly = true;
             this.textBoxMenu_userlog.Size = new System.Drawing.Size(90, 13);
             this.textBoxMenu_userlog.TabIndex = 2;
             this.textBoxMenu_userlog.Text = "Admin";
+            this.textBoxMenu_userlog.TextChanged += new System.EventHandler(this.textBoxMenu_userlog_TextChanged);
             // 
             // labelMenu_userLog
             // 
@@ -177,6 +179,7 @@ namespace InterfazUsuario
             this.btnMenu_logout.TabIndex = 3;
             this.btnMenu_logout.Text = "Cerrar Sesión";
             this.btnMenu_logout.UseVisualStyleBackColor = false;
+            this.btnMenu_logout.Click += new System.EventHandler(this.btnMenu_logout_Click);
             // 
             // panel_Contenedor
             // 

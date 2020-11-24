@@ -16,7 +16,7 @@ namespace InterfazUsuario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form_Menu());
+            Application.Run(new form_Login());
         }
     }
 }

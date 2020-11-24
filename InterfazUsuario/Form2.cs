@@ -16,6 +16,7 @@ namespace InterfazUsuario
         public form_Menu()
         {
             InitializeComponent();
+
         }
         private void AbrirForm (object formHijo)
         {
@@ -50,6 +51,18 @@ namespace InterfazUsuario
         private void btnMenu_creditos_Click(object sender, EventArgs e)
         {
             AbrirForm(new form_Creditos()); 
+        }
+
+        private void btnMenu_logout_Click(object sender, EventArgs e)
+        {
+            form_Login abrir = new form_Login();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void textBoxMenu_userlog_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

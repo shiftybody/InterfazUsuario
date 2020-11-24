@@ -164,6 +164,7 @@ namespace InterfazUsuario
             this.btn_regresarLogin.TabIndex = 15;
             this.btn_regresarLogin.Text = "Volver";
             this.btn_regresarLogin.UseVisualStyleBackColor = true;
+            this.btn_regresarLogin.Click += new System.EventHandler(this.btn_regresarLogin_Click);
             // 
             // form_Registro
             // 

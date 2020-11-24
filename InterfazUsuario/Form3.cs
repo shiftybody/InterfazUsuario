@@ -21,5 +21,12 @@ namespace InterfazUsuario
         {
 
         }
+
+        private void btn_regresarLogin_Click(object sender, EventArgs e)
+        {
+            form_Login abrir = new form_Login();
+            abrir.Show();
+            this.Hide();
+        }
     }
 }

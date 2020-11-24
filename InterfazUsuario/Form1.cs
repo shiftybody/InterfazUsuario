@@ -35,5 +35,43 @@ namespace InterfazUsuario
         {
 
         }
+
+        private void btnLog_Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnLog_Registrar_Click(object sender, EventArgs e)
+        {
+            form_Registro abrir = new form_Registro();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void btnLog_Login_Click(object sender, EventArgs e)
+        {
+            string user, password;
+
+            user = textBoxLog_User.Text;
+            password = textBoxLog_Password.Text;
+
+            if (user.Equals("admin") && password.Equals("1234"))
+            {
+                form_Menu abrir = new form_Menu();
+                abrir.Show();
+                this.Hide();
+            }
+            else
+            {
+                labelLog_Message.Visible = true;
+                label_Usuario.ForeColor = Color.FromArgb(176, 0, 32);
+                label_Contraseña.ForeColor = Color.FromArgb(176, 0, 32);
+            }
+        }
+
+        private void labelLog_Message_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
