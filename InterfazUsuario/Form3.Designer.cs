@@ -38,8 +38,8 @@ namespace InterfazUsuario
             this.textBox_PasswordConfirm = new System.Windows.Forms.TextBox();
             this.label_ContraseñaConfirmada = new System.Windows.Forms.Label();
             this.btn_Registrar = new System.Windows.Forms.Button();
-            this.textBox_alertMessage = new System.Windows.Forms.TextBox();
             this.btn_regresarLogin = new System.Windows.Forms.Button();
+            this.labelResgistro_Message = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +75,7 @@ namespace InterfazUsuario
             this.textBox_PasswordRegister.Name = "textBox_PasswordRegister";
             this.textBox_PasswordRegister.Size = new System.Drawing.Size(224, 22);
             this.textBox_PasswordRegister.TabIndex = 10;
+            this.textBox_PasswordRegister.Leave += new System.EventHandler(this.textBox_PasswordRegister_Leave);
             // 
             // textBox_UserRegister
             // 
@@ -88,6 +89,8 @@ namespace InterfazUsuario
             this.textBox_UserRegister.Name = "textBox_UserRegister";
             this.textBox_UserRegister.Size = new System.Drawing.Size(224, 22);
             this.textBox_UserRegister.TabIndex = 9;
+            this.textBox_UserRegister.TextChanged += new System.EventHandler(this.textBox_UserRegister_TextChanged);
+            this.textBox_UserRegister.Leave += new System.EventHandler(this.textBox_UserRegister_Leave);
             // 
             // label_ContraseñaRegistro
             // 
@@ -133,24 +136,14 @@ namespace InterfazUsuario
             // 
             // btn_Registrar
             // 
+            this.btn_Registrar.Enabled = false;
             this.btn_Registrar.Location = new System.Drawing.Point(507, 206);
             this.btn_Registrar.Name = "btn_Registrar";
             this.btn_Registrar.Size = new System.Drawing.Size(189, 37);
             this.btn_Registrar.TabIndex = 13;
             this.btn_Registrar.Text = "REGISTRAR";
             this.btn_Registrar.UseVisualStyleBackColor = true;
-            // 
-            // textBox_alertMessage
-            // 
-            this.textBox_alertMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.textBox_alertMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_alertMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_alertMessage.ForeColor = System.Drawing.Color.White;
-            this.textBox_alertMessage.Location = new System.Drawing.Point(382, 177);
-            this.textBox_alertMessage.Name = "textBox_alertMessage";
-            this.textBox_alertMessage.Size = new System.Drawing.Size(204, 14);
-            this.textBox_alertMessage.TabIndex = 14;
-            this.textBox_alertMessage.Visible = false;
+            this.btn_Registrar.Click += new System.EventHandler(this.btn_Registrar_Click);
             // 
             // btn_regresarLogin
             // 
@@ -166,14 +159,26 @@ namespace InterfazUsuario
             this.btn_regresarLogin.UseVisualStyleBackColor = true;
             this.btn_regresarLogin.Click += new System.EventHandler(this.btn_regresarLogin_Click);
             // 
+            // labelResgistro_Message
+            // 
+            this.labelResgistro_Message.AutoSize = true;
+            this.labelResgistro_Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResgistro_Message.ForeColor = System.Drawing.Color.White;
+            this.labelResgistro_Message.Location = new System.Drawing.Point(437, 173);
+            this.labelResgistro_Message.Name = "labelResgistro_Message";
+            this.labelResgistro_Message.Size = new System.Drawing.Size(76, 18);
+            this.labelResgistro_Message.TabIndex = 16;
+            this.labelResgistro_Message.Text = "Mensaje ";
+            this.labelResgistro_Message.Visible = false;
+            // 
             // form_Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(724, 266);
+            this.Controls.Add(this.labelResgistro_Message);
             this.Controls.Add(this.btn_regresarLogin);
-            this.Controls.Add(this.textBox_alertMessage);
             this.Controls.Add(this.btn_Registrar);
             this.Controls.Add(this.label_ContraseñaConfirmada);
             this.Controls.Add(this.textBox_PasswordConfirm);
@@ -204,7 +209,7 @@ namespace InterfazUsuario
         private System.Windows.Forms.TextBox textBox_PasswordConfirm;
         private System.Windows.Forms.Label label_ContraseñaConfirmada;
         private System.Windows.Forms.Button btn_Registrar;
-        private System.Windows.Forms.TextBox textBox_alertMessage;
         private System.Windows.Forms.Button btn_regresarLogin;
+        private System.Windows.Forms.Label labelResgistro_Message;
     }
 }

@@ -47,6 +47,7 @@ namespace InterfazUsuario
             this.btnMod_Buscar = new System.Windows.Forms.Button();
             this.textBoxMod_Date = new System.Windows.Forms.TextBox();
             this.btnMod_Guardar = new System.Windows.Forms.Button();
+            this.radioButtonMod_Nulo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.textBoxMod_Preci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBoxMod_Evap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBoxMod_Tmin)).BeginInit();
@@ -66,6 +67,12 @@ namespace InterfazUsuario
             // 
             // textBoxMod_Preci
             // 
+            this.textBoxMod_Preci.DecimalPlaces = 1;
+            this.textBoxMod_Preci.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxMod_Preci.Location = new System.Drawing.Point(515, 92);
             this.textBoxMod_Preci.Maximum = new decimal(new int[] {
             1000,
@@ -83,6 +90,12 @@ namespace InterfazUsuario
             // 
             // textBoxMod_Evap
             // 
+            this.textBoxMod_Evap.DecimalPlaces = 1;
+            this.textBoxMod_Evap.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxMod_Evap.Location = new System.Drawing.Point(515, 127);
             this.textBoxMod_Evap.Maximum = new decimal(new int[] {
             1000,
@@ -95,7 +108,7 @@ namespace InterfazUsuario
             0,
             -2147483648});
             this.textBoxMod_Evap.Name = "textBoxMod_Evap";
-            this.textBoxMod_Evap.Size = new System.Drawing.Size(160, 20);
+            this.textBoxMod_Evap.Size = new System.Drawing.Size(122, 20);
             this.textBoxMod_Evap.TabIndex = 29;
             // 
             // labelMod_Date
@@ -109,6 +122,12 @@ namespace InterfazUsuario
             // 
             // textBoxMod_Tmin
             // 
+            this.textBoxMod_Tmin.DecimalPlaces = 1;
+            this.textBoxMod_Tmin.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxMod_Tmin.Location = new System.Drawing.Point(515, 199);
             this.textBoxMod_Tmin.Maximum = new decimal(new int[] {
             1000,
@@ -126,6 +145,12 @@ namespace InterfazUsuario
             // 
             // textBoxMod_Tmax
             // 
+            this.textBoxMod_Tmax.DecimalPlaces = 1;
+            this.textBoxMod_Tmax.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxMod_Tmax.Location = new System.Drawing.Point(515, 163);
             this.textBoxMod_Tmax.Maximum = new decimal(new int[] {
             1000,
@@ -253,12 +278,24 @@ namespace InterfazUsuario
             this.btnMod_Guardar.Text = "   GUARDAR CAMBIOS";
             this.btnMod_Guardar.UseVisualStyleBackColor = false;
             // 
+            // radioButtonMod_Nulo
+            // 
+            this.radioButtonMod_Nulo.AutoSize = true;
+            this.radioButtonMod_Nulo.Location = new System.Drawing.Point(643, 130);
+            this.radioButtonMod_Nulo.Name = "radioButtonMod_Nulo";
+            this.radioButtonMod_Nulo.Size = new System.Drawing.Size(58, 17);
+            this.radioButtonMod_Nulo.TabIndex = 37;
+            this.radioButtonMod_Nulo.TabStop = true;
+            this.radioButtonMod_Nulo.Text = " NULO";
+            this.radioButtonMod_Nulo.UseVisualStyleBackColor = true;
+            // 
             // form_modBajas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(755, 450);
+            this.Controls.Add(this.radioButtonMod_Nulo);
             this.Controls.Add(this.textBoxMod_Date);
             this.Controls.Add(this.btnMod_Buscar);
             this.Controls.Add(this.labelMod_MessageBusqueda);
@@ -309,5 +346,6 @@ namespace InterfazUsuario
         private System.Windows.Forms.Label labelMod_MessageBusqueda;
         private System.Windows.Forms.Button btnMod_Buscar;
         private System.Windows.Forms.TextBox textBoxMod_Date;
+        private System.Windows.Forms.RadioButton radioButtonMod_Nulo;
     }
 }

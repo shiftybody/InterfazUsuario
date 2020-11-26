@@ -44,6 +44,7 @@ namespace InterfazUsuario
             this.btnAltas_Agregar = new System.Windows.Forms.Button();
             this.labelAltas_Message = new System.Windows.Forms.Label();
             this.textBoxAltas_Date = new System.Windows.Forms.TextBox();
+            this.radioButtonAltas_Nulo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Tmax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Tmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBoxAltas_Evap)).BeginInit();
@@ -110,6 +111,12 @@ namespace InterfazUsuario
             // 
             // textBoxAltas_Tmax
             // 
+            this.textBoxAltas_Tmax.DecimalPlaces = 1;
+            this.textBoxAltas_Tmax.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxAltas_Tmax.Location = new System.Drawing.Point(501, 191);
             this.textBoxAltas_Tmax.Maximum = new decimal(new int[] {
             1000,
@@ -127,6 +134,12 @@ namespace InterfazUsuario
             // 
             // textBoxAltas_Tmin
             // 
+            this.textBoxAltas_Tmin.DecimalPlaces = 1;
+            this.textBoxAltas_Tmin.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxAltas_Tmin.Location = new System.Drawing.Point(501, 245);
             this.textBoxAltas_Tmin.Maximum = new decimal(new int[] {
             1000,
@@ -153,6 +166,12 @@ namespace InterfazUsuario
             // 
             // textBoxAltas_Evap
             // 
+            this.textBoxAltas_Evap.DecimalPlaces = 1;
+            this.textBoxAltas_Evap.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxAltas_Evap.Location = new System.Drawing.Point(501, 140);
             this.textBoxAltas_Evap.Maximum = new decimal(new int[] {
             1000,
@@ -165,11 +184,17 @@ namespace InterfazUsuario
             0,
             -2147483648});
             this.textBoxAltas_Evap.Name = "textBoxAltas_Evap";
-            this.textBoxAltas_Evap.Size = new System.Drawing.Size(160, 20);
+            this.textBoxAltas_Evap.Size = new System.Drawing.Size(124, 20);
             this.textBoxAltas_Evap.TabIndex = 15;
             // 
             // textBoxAltas_Preci
             // 
+            this.textBoxAltas_Preci.DecimalPlaces = 1;
+            this.textBoxAltas_Preci.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.textBoxAltas_Preci.Location = new System.Drawing.Point(501, 83);
             this.textBoxAltas_Preci.Maximum = new decimal(new int[] {
             1000,
@@ -212,12 +237,24 @@ namespace InterfazUsuario
             this.textBoxAltas_Date.Size = new System.Drawing.Size(100, 20);
             this.textBoxAltas_Date.TabIndex = 19;
             // 
+            // radioButtonAltas_Nulo
+            // 
+            this.radioButtonAltas_Nulo.AutoSize = true;
+            this.radioButtonAltas_Nulo.Location = new System.Drawing.Point(644, 141);
+            this.radioButtonAltas_Nulo.Name = "radioButtonAltas_Nulo";
+            this.radioButtonAltas_Nulo.Size = new System.Drawing.Size(58, 17);
+            this.radioButtonAltas_Nulo.TabIndex = 20;
+            this.radioButtonAltas_Nulo.TabStop = true;
+            this.radioButtonAltas_Nulo.Text = " NULO";
+            this.radioButtonAltas_Nulo.UseVisualStyleBackColor = true;
+            // 
             // form_Altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(755, 450);
+            this.Controls.Add(this.radioButtonAltas_Nulo);
             this.Controls.Add(this.textBoxAltas_Date);
             this.Controls.Add(this.labelAltas_Message);
             this.Controls.Add(this.btnAltas_Agregar);
@@ -263,5 +300,6 @@ namespace InterfazUsuario
         private System.Windows.Forms.Button btnAltas_Agregar;
         private System.Windows.Forms.Label labelAltas_Message;
         private System.Windows.Forms.TextBox textBoxAltas_Date;
+        private System.Windows.Forms.RadioButton radioButtonAltas_Nulo;
     }
 }
