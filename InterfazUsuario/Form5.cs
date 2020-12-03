@@ -16,5 +16,15 @@ namespace InterfazUsuario
         {
             InitializeComponent();
         }
+
+        private void btnMod_Guardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonMod_Nulo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

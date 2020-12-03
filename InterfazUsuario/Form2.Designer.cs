@@ -144,7 +144,6 @@ namespace InterfazUsuario
             this.textBoxMenu_userlog.Size = new System.Drawing.Size(90, 13);
             this.textBoxMenu_userlog.TabIndex = 2;
             this.textBoxMenu_userlog.Text = "Admin";
-            this.textBoxMenu_userlog.TextChanged += new System.EventHandler(this.textBoxMenu_userlog_TextChanged);
             // 
             // labelMenu_userLog
             // 
@@ -199,9 +198,12 @@ namespace InterfazUsuario
             this.ClientSize = new System.Drawing.Size(957, 461);
             this.Controls.Add(this.panel_Contenedor);
             this.Controls.Add(this.panel_menuContenedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "form_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menú principal";
+            this.Text = "Menú";
+            this.Load += new System.EventHandler(this.form_Menu_Load);
             this.panel_menuContenedor.ResumeLayout(false);
             this.panel_UsuarioContenedor.ResumeLayout(false);
             this.panel_UsuarioContenedor.PerformLayout();

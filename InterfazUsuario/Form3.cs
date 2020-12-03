@@ -16,6 +16,9 @@ namespace InterfazUsuario
         public form_Registro()
         {
             InitializeComponent();
+
+            pictureBoxRegistrar.Controls.Add(btnRegistrar_volver);
+
         }
 
         private void label_ContraseñaConfirmada_Click(object sender, EventArgs e)
@@ -68,27 +71,79 @@ namespace InterfazUsuario
 
             //Desabilitar campo de texto
 
+
+
         }
 
-        private void textBox_UserRegister_TextChanged(object sender, EventArgs e)
+  
+        protected override void OnFormClosing(FormClosingEventArgs e)
         {
-         
+            Application.Exit();
         }
 
+        private void btn_regresarLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           form_Login abrir = new form_Login();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            form_Login abrir = new form_Login();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void textBox_UserRegister_Enter(object sender, EventArgs e)
+        {
+            if (textBox_UserRegister.Text == "Ingrese un nombre de usuario")
+            {
+                textBox_UserRegister.Text = "";
+            }
+            textBox_UserRegister.ForeColor = Color.White;
+        }
         private void textBox_UserRegister_Leave(object sender, EventArgs e)
         {
-            if (textBox_UserRegister.Text != "" && textBox_PasswordRegister.Text != "")
+            if (textBox_UserRegister.Text == "")
             {
-                btn_Registrar.Enabled = true;
+                textBox_UserRegister.Text = "Ingrese un nombre de usuario";
+                textBox_UserRegister.ForeColor = Color.Gray;
             }
         }
 
+        private void textBox_PasswordRegister_Enter(object sender, EventArgs e)
+        {
+            if (textBox_PasswordRegister.Text == "Ingrese una contraseña")
+            {
+                textBox_PasswordRegister.Text = "";
+            }
+            textBox_PasswordRegister.ForeColor = Color.White;
+        }
         private void textBox_PasswordRegister_Leave(object sender, EventArgs e)
         {
-            if (textBox_UserRegister.Text != "" && textBox_PasswordRegister.Text != "")
+            if (textBox_PasswordRegister.Text == "")
             {
-                btn_Registrar.Enabled = true;
+                textBox_PasswordRegister.Text = "Ingrese una contraseña";
+                textBox_PasswordRegister.ForeColor = Color.Gray;
+            }        
+        }
+        private void textBox_PasswordConfirm_Enter(object sender, EventArgs e)
+        {
+            if (textBox_PasswordConfirm.Text == "Vuelva a ingresar la contraseña")
+            {
+                textBox_PasswordConfirm.Text = "";
+            }
+            textBox_PasswordConfirm.ForeColor = Color.White;
+        }
+        private void textBox_PasswordConfirm_Leave(object sender, EventArgs e)
+        {
+            if (textBox_PasswordConfirm.Text == "")
+            {
+                textBox_PasswordConfirm.Text = "Vuelva a ingresar la contraseña";
+                textBox_PasswordConfirm.ForeColor = Color.Gray;
             }
         }
+
     }
 }

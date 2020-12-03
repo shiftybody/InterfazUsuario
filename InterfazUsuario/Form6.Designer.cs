@@ -93,7 +93,7 @@ namespace InterfazUsuario
             // pictureBox_Contact
             // 
             this.pictureBox_Contact.Image = global::InterfazUsuario.Properties.Resources._2020_09_25;
-            this.pictureBox_Contact.Location = new System.Drawing.Point(454, 124);
+            this.pictureBox_Contact.Location = new System.Drawing.Point(436, 130);
             this.pictureBox_Contact.Name = "pictureBox_Contact";
             this.pictureBox_Contact.Size = new System.Drawing.Size(170, 170);
             this.pictureBox_Contact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
