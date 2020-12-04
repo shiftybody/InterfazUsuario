@@ -19,4 +19,10 @@ namespace InterfazUsuario
             Application.Run(new form_Login());
         }
     }
+    public class Ruta
+    {
+        public static string rutaUsuario = @"C:\Users\david\Documents\IntProg\InterfazUsuario\DB\usuarios.txt";
+        public static string rutaEstacion= @"C:\Users\david\Documents\IntProg\InterfazUsuario\DB\estacion.txt";
+
+    }
 }
