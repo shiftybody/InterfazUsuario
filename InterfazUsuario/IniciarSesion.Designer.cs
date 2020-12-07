@@ -95,6 +95,7 @@ namespace InterfazUsuario
             this.linkLabelLog_RecuperarPass.TabIndex = 4;
             this.linkLabelLog_RecuperarPass.TabStop = true;
             this.linkLabelLog_RecuperarPass.Text = "Entra aquí";
+            this.linkLabelLog_RecuperarPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLog_RecuperarPass_LinkClicked);
             // 
             // textBoxLog_User
             // 
@@ -127,12 +128,16 @@ namespace InterfazUsuario
             // 
             // btnLog_Registrar
             // 
+            this.btnLog_Registrar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLog_Registrar.FlatAppearance.BorderSize = 0;
+            this.btnLog_Registrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnLog_Registrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLog_Registrar.Location = new System.Drawing.Point(71, 404);
             this.btnLog_Registrar.Name = "btnLog_Registrar";
             this.btnLog_Registrar.Size = new System.Drawing.Size(224, 42);
             this.btnLog_Registrar.TabIndex = 7;
             this.btnLog_Registrar.Text = "REGISTRARSE";
-            this.btnLog_Registrar.UseVisualStyleBackColor = true;
+            this.btnLog_Registrar.UseVisualStyleBackColor = false;
             this.btnLog_Registrar.Click += new System.EventHandler(this.btnLog_Registrar_Click);
             // 
             // labelLog_preguntaPass
@@ -148,6 +153,7 @@ namespace InterfazUsuario
             // btnLog_Salir
             // 
             this.btnLog_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.btnLog_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLog_Salir.FlatAppearance.BorderSize = 0;
             this.btnLog_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnLog_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -161,6 +167,8 @@ namespace InterfazUsuario
             this.btnLog_Salir.Text = "SALIR";
             this.btnLog_Salir.UseVisualStyleBackColor = false;
             this.btnLog_Salir.Click += new System.EventHandler(this.btnLog_Salir_Click);
+            this.btnLog_Salir.MouseLeave += new System.EventHandler(this.btnLog_Salir_MouseLeave);
+            this.btnLog_Salir.MouseHover += new System.EventHandler(this.btnLog_Salir_MouseHover);
             // 
             // labelLog_Message
             // 
@@ -216,7 +224,7 @@ namespace InterfazUsuario
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::InterfazUsuario.Properties.Resources.usuario__2_;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(73, 216);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 16);
@@ -265,7 +273,6 @@ namespace InterfazUsuario
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
             this.Shown += new System.EventHandler(this.form_Login_Shown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form_Login_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLog_Imagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

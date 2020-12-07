@@ -37,7 +37,7 @@
     </StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>termometro.ico</ApplicationIcon>
+    <ApplicationIcon>applicationIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -145,56 +145,23 @@
     <None Include="Resources\CandadoCerrado.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\usuario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verificar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verificar %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2020-09-25.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\github.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\facebook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\disquete.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\disquete %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\candado.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pngegg.png" />
-    <None Include="Resources\pngegg1.png" />
-    <None Include="Resources\pngegg2.png" />
-    <None Include="Resources\pngegg3.png" />
-    <None Include="Resources\pngegg4.png" />
-    <None Include="Resources\pngegg5.png" />
+    <Content Include="applicationIcon.ico" />
+    <None Include="Resources\usuario %282%29.png" />
     <None Include="Resources\pngegg6.png" />
-    <None Include="Resources\pngegg7.png" />
-    <None Include="Resources\registroimg.png" />
     <None Include="Resources\registro.png" />
-    <None Include="Resources\proximo.png" />
-    <None Include="Resources\flecha-correcta.png" />
     <None Include="Resources\flecha-correcta %281%29.png" />
-    <Content Include="termometro.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

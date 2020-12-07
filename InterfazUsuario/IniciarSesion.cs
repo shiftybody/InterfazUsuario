@@ -17,6 +17,8 @@ namespace InterfazUsuario
         public form_Login()
         {
             InitializeComponent();
+            // agrego la imagen del pictureBox como objeto de una imagen 
+            // sobrepuesta, que requiere tener transparencia
             pictureBoxlog_Fondo.Controls.Add(pictureBoxLog_Imagen);
             pictureBoxLog_Imagen.Location = new Point(135,200);
             this.pictureBoxLog_Imagen.BackColor = Color.Transparent;
@@ -99,20 +101,21 @@ namespace InterfazUsuario
             }
         }
 
-        private void form_Login_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
+        // codigo que se ejecuta cuando el formulario aparece por primera vez
+        // verificando si las variables a los path de nuestros archivos son correctas
          private void form_Login_Shown(object sender, EventArgs e)
         {
             if (!File.Exists(Ruta.rutaUsuario) && !File.Exists(Ruta.rutaEstacion))
             {
+                //se instancia un objeto de la clase MensajeAlerta
+                //pasando los parametros del mensaje para el texbox del formulario "MensajeAlerta"
                 MensajeAlerta mensaje = new MensajeAlerta();
                 mensaje.Show();
-                mensaje.textBoxAlert_Message.Text = "Ruta raiz del documento usuarios.txt y estacion.txt no encontrada" +
+                //el mensaje se guarda en una variable publica por si es necesario utilizarla desde otro formulario
+                Ruta.noRuta = "Ruta raiz del documento usuarios.txt y estacion.txt no encontrada" +
                     ", favor de comprobar su exitenicia y/o cambiar la direccion dentro de program.cs" +
                     " en las variable: rutaUsuario y rutaEstacion. De click en ACEPTAR para salir del programa";
+                mensaje.textBoxAlert_Message.Text = Ruta.noRuta;
                 Opacity = .85;
                 Enabled = false;
             }
@@ -120,12 +123,13 @@ namespace InterfazUsuario
             {
                 if (!File.Exists(Ruta.rutaUsuario))
                 {
-                    //se instancia un objeto de la clase MensajeAlerta
+                   //El mensaje cambia segun los archivos detectados 
                     MensajeAlerta mensaje = new MensajeAlerta();
                     mensaje.Show();
-                    mensaje.textBoxAlert_Message.Text = "Ruta raiz del documento usuarios.txt no encontrada" +
+                    Ruta.noRuta = "Ruta raiz del documento usuarios.txt no encontrada" +
                         ", favor de comprobar su exitenicia y/o cambiar la direccion dentro de program.cs" +
-                        " en la variable: rutaUsuario. De click en ACEPTAR para salir del programa";
+                        " en la variable: rutaUsuario... De click en ACEPTAR para salir del programa";
+                    mensaje.textBoxAlert_Message.Text = Ruta.noRuta;
                     Opacity = .85;
                     Enabled = false;
 
@@ -136,14 +140,35 @@ namespace InterfazUsuario
                     {
                         MensajeAlerta mensaje = new MensajeAlerta();
                         mensaje.Show();
-                        mensaje.textBoxAlert_Message.Text = "Ruta raiz del documento estacion.txt no encontrada" +
+                        Ruta.noRuta = "Ruta raiz del documento estacion.txt no encontrada" +
                             ", favor de comprobar su exitenicia y/o cambiar la direccion dentro de program.cs" +
-                            " en la variable: rutaEstacion. De click en ACEPTAR para salir del programa";
+                            " en la variable: rutaEstacion... De click en ACEPTAR para salir del programa";
+                        mensaje.textBoxAlert_Message.Text = Ruta.noRuta;
                         Opacity = .85;
                         Enabled = false;
                     }
                 }
             }          
+        }
+
+        private void btnLog_Salir_MouseHover(object sender, EventArgs e)
+        {
+            btnLog_Salir.ForeColor = Color.Red;
+        }
+
+        private void btnLog_Salir_MouseLeave(object sender, EventArgs e)
+        {
+            btnLog_Salir.ForeColor = Color.White;
+        }
+
+        private void linkLabelLog_RecuperarPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+             
+            MensajeAlerta mensaje = new MensajeAlerta();
+            mensaje.Show();
+            mensaje.textBoxAlert_Message.Text = "Opción no disponible";
+            mensaje.textBoxAlert_Message.Location = new Point(34, 93);
+            
         }
     }
 }

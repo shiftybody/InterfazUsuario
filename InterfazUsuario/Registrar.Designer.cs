@@ -53,7 +53,7 @@ namespace InterfazUsuario
             this.textBox_PasswordRegister.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_PasswordRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_PasswordRegister.ForeColor = System.Drawing.Color.Gray;
-            this.textBox_PasswordRegister.Location = new System.Drawing.Point(371, 129);
+            this.textBox_PasswordRegister.Location = new System.Drawing.Point(371, 128);
             this.textBox_PasswordRegister.Name = "textBox_PasswordRegister";
             this.textBox_PasswordRegister.Size = new System.Drawing.Size(208, 15);
             this.textBox_PasswordRegister.TabIndex = 10;
@@ -69,7 +69,7 @@ namespace InterfazUsuario
             this.textBox_UserRegister.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_UserRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_UserRegister.ForeColor = System.Drawing.Color.Gray;
-            this.textBox_UserRegister.Location = new System.Drawing.Point(371, 49);
+            this.textBox_UserRegister.Location = new System.Drawing.Point(371, 48);
             this.textBox_UserRegister.Name = "textBox_UserRegister";
             this.textBox_UserRegister.Size = new System.Drawing.Size(208, 15);
             this.textBox_UserRegister.TabIndex = 9;
@@ -124,12 +124,16 @@ namespace InterfazUsuario
             // 
             // btn_Registrar
             // 
+            this.btn_Registrar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_Registrar.FlatAppearance.BorderSize = 0;
+            this.btn_Registrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_Registrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Registrar.Location = new System.Drawing.Point(355, 293);
             this.btn_Registrar.Name = "btn_Registrar";
             this.btn_Registrar.Size = new System.Drawing.Size(224, 42);
             this.btn_Registrar.TabIndex = 13;
             this.btn_Registrar.Text = "REGISTRAR";
-            this.btn_Registrar.UseVisualStyleBackColor = true;
+            this.btn_Registrar.UseVisualStyleBackColor = false;
             this.btn_Registrar.Click += new System.EventHandler(this.btn_Registrar_Click);
             // 
             // labelResgistro_Message
@@ -205,7 +209,7 @@ namespace InterfazUsuario
             this.btnRegistrar_volver.TabIndex = 22;
             this.btnRegistrar_volver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnRegistrar_volver.UseVisualStyleBackColor = false;
-            this.btnRegistrar_volver.Click += new System.EventHandler(this.button4_Click);
+            this.btnRegistrar_volver.Click += new System.EventHandler(this.btnRegistrar_volver_Click);
             // 
             // pictureBoxRegistrar
             // 
