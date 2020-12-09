@@ -14,3 +14,5 @@ C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\Inter
 C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.form_modBajas.resources
 C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.form_Creditos.resources
 C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.MensajeAlerta.resources
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\bin\Debug\ColorProgressBar.dll
+C:\Users\david\Documents\IntProg\InterfazUsuario\InterfazUsuario\obj\Debug\InterfazUsuario.csproj.CopyComplete

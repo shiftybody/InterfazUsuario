@@ -42,12 +42,12 @@ namespace InterfazUsuario
             this.labelMod_MessageBusqueda = new System.Windows.Forms.Label();
             this.btnMod_Buscar = new System.Windows.Forms.Button();
             this.textBoxMod_Date = new System.Windows.Forms.TextBox();
-            this.radioButtonMod_Nulo = new System.Windows.Forms.RadioButton();
             this.btnMod_Guardar = new System.Windows.Forms.Button();
             this.textBoxMod_Preci = new System.Windows.Forms.TextBox();
             this.textBoxMod_Evap = new System.Windows.Forms.TextBox();
             this.textBoxMod_Tmax = new System.Windows.Forms.TextBox();
             this.textBoxMod_Tmin = new System.Windows.Forms.TextBox();
+            this.checkBoxMod_Nulo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelMod_Message
@@ -64,7 +64,7 @@ namespace InterfazUsuario
             // labelMod_Date
             // 
             this.labelMod_Date.AutoSize = true;
-            this.labelMod_Date.Location = new System.Drawing.Point(128, 141);
+            this.labelMod_Date.Location = new System.Drawing.Point(45, 131);
             this.labelMod_Date.Name = "labelMod_Date";
             this.labelMod_Date.Size = new System.Drawing.Size(37, 13);
             this.labelMod_Date.TabIndex = 28;
@@ -108,13 +108,16 @@ namespace InterfazUsuario
             // 
             // monthCalendarMod_Date
             // 
-            this.monthCalendarMod_Date.Location = new System.Drawing.Point(72, 170);
+            this.monthCalendarMod_Date.Location = new System.Drawing.Point(88, 163);
+            this.monthCalendarMod_Date.MaxSelectionCount = 1;
             this.monthCalendarMod_Date.Name = "monthCalendarMod_Date";
+            this.monthCalendarMod_Date.ShowTodayCircle = false;
             this.monthCalendarMod_Date.TabIndex = 21;
+            this.monthCalendarMod_Date.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendarMod_Date_DateSelected);
             // 
             // textBoxMod_ID
             // 
-            this.textBoxMod_ID.Location = new System.Drawing.Point(74, 62);
+            this.textBoxMod_ID.Location = new System.Drawing.Point(88, 83);
             this.textBoxMod_ID.Name = "textBoxMod_ID";
             this.textBoxMod_ID.Size = new System.Drawing.Size(131, 20);
             this.textBoxMod_ID.TabIndex = 20;
@@ -122,7 +125,7 @@ namespace InterfazUsuario
             // labelMod_ID
             // 
             this.labelMod_ID.AutoSize = true;
-            this.labelMod_ID.Location = new System.Drawing.Point(50, 64);
+            this.labelMod_ID.Location = new System.Drawing.Point(64, 85);
             this.labelMod_ID.Name = "labelMod_ID";
             this.labelMod_ID.Size = new System.Drawing.Size(18, 13);
             this.labelMod_ID.TabIndex = 19;
@@ -136,12 +139,13 @@ namespace InterfazUsuario
             this.btnMod_Eliminar.TabIndex = 33;
             this.btnMod_Eliminar.Text = "ELIMINAR";
             this.btnMod_Eliminar.UseVisualStyleBackColor = true;
+            this.btnMod_Eliminar.Click += new System.EventHandler(this.btnMod_Eliminar_Click);
             // 
             // labelMod_MessageBusqueda
             // 
             this.labelMod_MessageBusqueda.AutoSize = true;
             this.labelMod_MessageBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMod_MessageBusqueda.Location = new System.Drawing.Point(102, 103);
+            this.labelMod_MessageBusqueda.Location = new System.Drawing.Point(194, 125);
             this.labelMod_MessageBusqueda.Name = "labelMod_MessageBusqueda";
             this.labelMod_MessageBusqueda.Size = new System.Drawing.Size(189, 16);
             this.labelMod_MessageBusqueda.TabIndex = 34;
@@ -153,31 +157,21 @@ namespace InterfazUsuario
             this.btnMod_Buscar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMod_Buscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnMod_Buscar.ForeColor = System.Drawing.Color.Black;
-            this.btnMod_Buscar.Location = new System.Drawing.Point(230, 60);
+            this.btnMod_Buscar.Location = new System.Drawing.Point(244, 81);
             this.btnMod_Buscar.Name = "btnMod_Buscar";
             this.btnMod_Buscar.Size = new System.Drawing.Size(126, 26);
             this.btnMod_Buscar.TabIndex = 35;
             this.btnMod_Buscar.Text = "BUSCAR";
             this.btnMod_Buscar.UseVisualStyleBackColor = false;
+            this.btnMod_Buscar.TextChanged += new System.EventHandler(this.btnMod_Buscar_TextChanged);
+            this.btnMod_Buscar.Click += new System.EventHandler(this.btnMod_Buscar_Click);
             // 
             // textBoxMod_Date
             // 
-            this.textBoxMod_Date.Location = new System.Drawing.Point(171, 138);
+            this.textBoxMod_Date.Location = new System.Drawing.Point(88, 124);
             this.textBoxMod_Date.Name = "textBoxMod_Date";
             this.textBoxMod_Date.Size = new System.Drawing.Size(100, 20);
             this.textBoxMod_Date.TabIndex = 36;
-            // 
-            // radioButtonMod_Nulo
-            // 
-            this.radioButtonMod_Nulo.AutoSize = true;
-            this.radioButtonMod_Nulo.Location = new System.Drawing.Point(593, 143);
-            this.radioButtonMod_Nulo.Name = "radioButtonMod_Nulo";
-            this.radioButtonMod_Nulo.Size = new System.Drawing.Size(58, 17);
-            this.radioButtonMod_Nulo.TabIndex = 37;
-            this.radioButtonMod_Nulo.TabStop = true;
-            this.radioButtonMod_Nulo.Text = " NULO";
-            this.radioButtonMod_Nulo.UseVisualStyleBackColor = true;
-            this.radioButtonMod_Nulo.CheckedChanged += new System.EventHandler(this.radioButtonMod_Nulo_CheckedChanged);
             // 
             // btnMod_Guardar
             // 
@@ -197,7 +191,7 @@ namespace InterfazUsuario
             // 
             // textBoxMod_Preci
             // 
-            this.textBoxMod_Preci.Location = new System.Drawing.Point(501, 86);
+            this.textBoxMod_Preci.Location = new System.Drawing.Point(501, 83);
             this.textBoxMod_Preci.Name = "textBoxMod_Preci";
             this.textBoxMod_Preci.Size = new System.Drawing.Size(150, 20);
             this.textBoxMod_Preci.TabIndex = 38;
@@ -218,10 +212,22 @@ namespace InterfazUsuario
             // 
             // textBoxMod_Tmin
             // 
+            this.textBoxMod_Tmin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBoxMod_Tmin.Location = new System.Drawing.Point(501, 254);
             this.textBoxMod_Tmin.Name = "textBoxMod_Tmin";
             this.textBoxMod_Tmin.Size = new System.Drawing.Size(150, 20);
             this.textBoxMod_Tmin.TabIndex = 41;
+            // 
+            // checkBoxMod_Nulo
+            // 
+            this.checkBoxMod_Nulo.AutoSize = true;
+            this.checkBoxMod_Nulo.Location = new System.Drawing.Point(595, 142);
+            this.checkBoxMod_Nulo.Name = "checkBoxMod_Nulo";
+            this.checkBoxMod_Nulo.Size = new System.Drawing.Size(56, 17);
+            this.checkBoxMod_Nulo.TabIndex = 42;
+            this.checkBoxMod_Nulo.Text = "NULO";
+            this.checkBoxMod_Nulo.UseVisualStyleBackColor = true;
+            this.checkBoxMod_Nulo.CheckedChanged += new System.EventHandler(this.checkBoxMod_Nulo_CheckedChanged);
             // 
             // form_modBajas
             // 
@@ -229,11 +235,11 @@ namespace InterfazUsuario
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(755, 450);
+            this.Controls.Add(this.checkBoxMod_Nulo);
             this.Controls.Add(this.textBoxMod_Tmin);
             this.Controls.Add(this.textBoxMod_Tmax);
             this.Controls.Add(this.textBoxMod_Evap);
             this.Controls.Add(this.textBoxMod_Preci);
-            this.Controls.Add(this.radioButtonMod_Nulo);
             this.Controls.Add(this.textBoxMod_Date);
             this.Controls.Add(this.btnMod_Buscar);
             this.Controls.Add(this.labelMod_MessageBusqueda);
@@ -272,10 +278,10 @@ namespace InterfazUsuario
         private System.Windows.Forms.Label labelMod_MessageBusqueda;
         private System.Windows.Forms.Button btnMod_Buscar;
         private System.Windows.Forms.TextBox textBoxMod_Date;
-        private System.Windows.Forms.RadioButton radioButtonMod_Nulo;
         private System.Windows.Forms.TextBox textBoxMod_Preci;
         private System.Windows.Forms.TextBox textBoxMod_Evap;
         private System.Windows.Forms.TextBox textBoxMod_Tmax;
         private System.Windows.Forms.TextBox textBoxMod_Tmin;
+        private System.Windows.Forms.CheckBox checkBoxMod_Nulo;
     }
 }

@@ -40,8 +40,8 @@ namespace InterfazUsuario
             this.labelLog_preguntaPass = new System.Windows.Forms.Label();
             this.btnLog_Salir = new System.Windows.Forms.Button();
             this.labelLog_Message = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.userLogLine = new System.Windows.Forms.Button();
+            this.passLogLine = new System.Windows.Forms.Button();
             this.pictureBoxLog_Imagen = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -175,32 +175,36 @@ namespace InterfazUsuario
             this.labelLog_Message.AutoSize = true;
             this.labelLog_Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLog_Message.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.labelLog_Message.Location = new System.Drawing.Point(48, 326);
+            this.labelLog_Message.Location = new System.Drawing.Point(70, 322);
             this.labelLog_Message.Name = "labelLog_Message";
-            this.labelLog_Message.Size = new System.Drawing.Size(268, 15);
+            this.labelLog_Message.Size = new System.Drawing.Size(55, 15);
             this.labelLog_Message.TabIndex = 10;
-            this.labelLog_Message.Text = "PRUEBE:  usuario  \"admin\"   contraseña: \"1234\"";
+            this.labelLog_Message.Text = "mensaje";
             this.labelLog_Message.Visible = false;
             // 
-            // button1
+            // userLogLine
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(71, 240);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 2);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.userLogLine.Enabled = false;
+            this.userLogLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.userLogLine.ForeColor = System.Drawing.Color.White;
+            this.userLogLine.Location = new System.Drawing.Point(71, 240);
+            this.userLogLine.Name = "userLogLine";
+            this.userLogLine.Size = new System.Drawing.Size(224, 2);
+            this.userLogLine.TabIndex = 11;
+            this.userLogLine.Text = "button1";
+            this.userLogLine.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // passLogLine
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(71, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(224, 2);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.passLogLine.Enabled = false;
+            this.passLogLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.passLogLine.ForeColor = System.Drawing.Color.White;
+            this.passLogLine.Location = new System.Drawing.Point(71, 300);
+            this.passLogLine.Name = "passLogLine";
+            this.passLogLine.Size = new System.Drawing.Size(224, 2);
+            this.passLogLine.TabIndex = 12;
+            this.passLogLine.Text = "button2";
+            this.passLogLine.UseVisualStyleBackColor = true;
             // 
             // pictureBoxLog_Imagen
             // 
@@ -253,8 +257,8 @@ namespace InterfazUsuario
             this.Controls.Add(this.pictureBoxLog_Imagen);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.passLogLine);
+            this.Controls.Add(this.userLogLine);
             this.Controls.Add(this.labelLog_Message);
             this.Controls.Add(this.btnLog_Salir);
             this.Controls.Add(this.labelLog_preguntaPass);
@@ -294,8 +298,8 @@ namespace InterfazUsuario
         private System.Windows.Forms.Button btnLog_Salir;
         private System.Windows.Forms.TextBox textBoxLog_Password;
         private System.Windows.Forms.Label labelLog_Message;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button userLogLine;
+        private System.Windows.Forms.Button passLogLine;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBoxlog_Fondo;

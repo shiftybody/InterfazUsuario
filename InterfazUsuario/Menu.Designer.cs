@@ -37,9 +37,9 @@ namespace InterfazUsuario
             this.panel_UsuarioContenedor = new System.Windows.Forms.Panel();
             this.textBoxMenu_userlog = new System.Windows.Forms.TextBox();
             this.labelMenu_userLog = new System.Windows.Forms.Label();
+            this.pictureBox_User = new System.Windows.Forms.PictureBox();
             this.btnMenu_logout = new System.Windows.Forms.Button();
             this.panel_Contenedor = new System.Windows.Forms.Panel();
-            this.pictureBox_User = new System.Windows.Forms.PictureBox();
             this.panel_menuContenedor.SuspendLayout();
             this.panel_UsuarioContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).BeginInit();
@@ -149,6 +149,16 @@ namespace InterfazUsuario
             this.labelMenu_userLog.TabIndex = 1;
             this.labelMenu_userLog.Text = "Usuario:";
             // 
+            // pictureBox_User
+            // 
+            this.pictureBox_User.Image = global::InterfazUsuario.Properties.Resources.usuario;
+            this.pictureBox_User.Location = new System.Drawing.Point(25, 21);
+            this.pictureBox_User.Name = "pictureBox_User";
+            this.pictureBox_User.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_User.TabIndex = 0;
+            this.pictureBox_User.TabStop = false;
+            // 
             // btnMenu_logout
             // 
             this.btnMenu_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -173,16 +183,6 @@ namespace InterfazUsuario
             this.panel_Contenedor.Size = new System.Drawing.Size(760, 461);
             this.panel_Contenedor.TabIndex = 2;
             this.panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Contenedor_Paint);
-            // 
-            // pictureBox_User
-            // 
-            this.pictureBox_User.Image = global::InterfazUsuario.Properties.Resources.usuario;
-            this.pictureBox_User.Location = new System.Drawing.Point(25, 21);
-            this.pictureBox_User.Name = "pictureBox_User";
-            this.pictureBox_User.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_User.TabIndex = 0;
-            this.pictureBox_User.TabStop = false;
             // 
             // form_Menu
             // 
@@ -215,8 +215,8 @@ namespace InterfazUsuario
         private System.Windows.Forms.Panel panel_UsuarioContenedor;
         private System.Windows.Forms.Button btnMenu_logout;
         private System.Windows.Forms.PictureBox pictureBox_User;
-        private System.Windows.Forms.TextBox textBoxMenu_userlog;
         private System.Windows.Forms.Label labelMenu_userLog;
         private System.Windows.Forms.Panel panel_Contenedor;
+        public System.Windows.Forms.TextBox textBoxMenu_userlog;
     }
 }

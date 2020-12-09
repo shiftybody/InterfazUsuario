@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -24,56 +18,114 @@ namespace InterfazUsuario
             this.pictureBoxLog_Imagen.BackColor = Color.Transparent;
         }
 
-
+        // evento para finaliar la aplicación desde el bótón "salir"
         private void btnLog_Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // evento para cambiar al formulario de registro
         private void btnLog_Registrar_Click(object sender, EventArgs e)
         {
             form_Registro abrir = new form_Registro();
             abrir.Show();
             this.Hide();
         }
-
+        // evento para comprobar que el usuario y la contraseseña sean correctas
         private void btnLog_Login_Click(object sender, EventArgs e)
         {
-            string user, password;
+            // variables que leen los valores ingresados en los texbox
+            string user = textBoxLog_User.Text;
+            string password = textBoxLog_Password.Text;
 
-            user = textBoxLog_User.Text;
-            password = textBoxLog_Password.Text;
+            // estructura de busqueda (validar inicio de sesión) 
 
-            if (user.Equals("admin") && password.Equals("1234"))
+            // almacenamos en la variable "contenido", la lectura del archivo usuarios.txt
+            string ruta = Ruta.rutaUsuario;
+            StreamReader lectura = File.OpenText(ruta);
+            string contenido = lectura.ReadToEnd();
+            lectura.Close();
+
+            // separamos cada usuario registrado en un array
+            string[] usuarios = contenido.Split('\n');
+
+            // dentro de un ciclo leemos los datos de cada usuario
+            for (int x = 0; x < (usuarios.Length - 1); x++)
             {
-                form_Menu abrir = new form_Menu();
-                abrir.Show();
-                this.Hide();
-            }
-            else
-            {
-                labelLog_Message.Visible = true;
-                label_Usuario.ForeColor = Color.FromArgb(176, 0, 32);
-                label_Contraseña.ForeColor = Color.FromArgb(176, 0, 32);
+                // separamos la informacion en usuario y constraseña
+                string[] usuario = usuarios[x].Split(',');
+
+                // si los campos estan "vacíos" 
+                if (user.Equals("Usuario") && password.Equals("Contraseña"))
+                {
+                    labelLog_Message.Text = "Los elementos no pueden quedar vacíos";
+                    labelLog_Message.Visible = true;
+                    userLogLine.ForeColor = Color.Red;
+                    passLogLine.ForeColor = Color.Red;
+
+                }// si uno de los campos esta vacío y el otro no 
+                else if (!(user.Equals("Usuario")) && password.Equals("Contraseña"))
+                {
+                    labelLog_Message.Text = "Los elementos no pueden quedar vacíos";
+                    labelLog_Message.Visible = true;
+                    passLogLine.ForeColor = Color.Red;
+
+                }else if (user.Equals("Usuario") && !(password.Equals("Contraseña")))
+                {
+                    labelLog_Message.Text = "Los elementos no pueden quedar vacíos";
+                    labelLog_Message.Visible = true;
+                    userLogLine.ForeColor = Color.Red;
+                } // si los campos no estan vacío y se encuentran en usuarios.txt
+                else  if (usuario[0].Trim().Equals(user.ToLower()) && usuario[1].Trim().Equals(password))
+                {
+                    form_Menu abrir = new form_Menu();
+                    abrir.Show();
+                    abrir.textBoxMenu_userlog.Text = user.ToLower();
+                    this.Hide();
+
+                }  // si solo uno de los campos ingresados se encuentran en usuarios.txt
+                else if (!(usuario[0].Trim().Equals(user.ToLower())) && usuario[1].Trim().Equals(password))
+                {
+                    labelLog_Message.Text = "   Favor de verificar datos ingresados";
+                    labelLog_Message.Visible = true;
+                    userLogLine.ForeColor = Color.Red;
+                    passLogLine.ForeColor = Color.Red;
+                }
+                else if ( usuario[0].Trim().Equals(user.ToLower()) && !(usuario[1].Trim().Equals(password)))
+                {
+                    labelLog_Message.Text = "               Contraseña incorrecta";
+                    labelLog_Message.Visible = true;
+                    passLogLine.ForeColor = Color.Red;
+                }
+                else // si ninguno de los campos ingresados se encuentran en usuarios.txt
+                if (!(usuario[0].Trim().Equals(user.ToLower())) && !(usuario[1].Trim().Equals(password)))
+                {
+                    labelLog_Message.Text = "   Favor de verificar datos ingresados";
+                    labelLog_Message.Visible = true;
+                    userLogLine.ForeColor = Color.Red;
+                    passLogLine.ForeColor = Color.Red;
+                }
+
+
             }
         }
-
+        // evento para finaliar la aplicación desde el bótón superior derecho
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
+        // eventos que crean el efecto placeholder 
         private void textBoxLog_User_Enter(object sender, EventArgs e)
-        {
-            if(textBoxLog_User.Text == "Usuario")
+        {   // si el texbox no esta vacío al hacer Enter, se vacía 
+            if (textBoxLog_User.Text == "Usuario")
             {
                 textBoxLog_User.Text = "";
             }
             textBoxLog_User.ForeColor = Color.White;
+            userLogLine.ForeColor = Color.White;
         }
 
         private void textBoxLog_User_Leave(object sender, EventArgs e)
-        {
+        {       // si el texbox esta vacio al salir de el, este se llenara con el texto placeholder
             if (textBoxLog_User.Text == "")
             {
                 textBoxLog_User.Text = "Usuario";
@@ -89,6 +141,7 @@ namespace InterfazUsuario
                 textBoxLog_Password.UseSystemPasswordChar = true ;
             }
             textBoxLog_Password.ForeColor = Color.White;
+            passLogLine.ForeColor = Color.White;
         }
 
         private void textBoxLog_Password_Leave(object sender, EventArgs e)
@@ -112,7 +165,7 @@ namespace InterfazUsuario
                 MensajeAlerta mensaje = new MensajeAlerta();
                 mensaje.Show();
                 //el mensaje se guarda en una variable publica por si es necesario utilizarla desde otro formulario
-                Ruta.noRuta = "Ruta raiz del documento usuarios.txt y estacion.txt no encontrada" +
+                Ruta.noRuta = "Ruta del documento usuarios.txt y estacion.txt no encontrada" +
                     ", favor de comprobar su exitenicia y/o cambiar la direccion dentro de program.cs" +
                     " en las variable: rutaUsuario y rutaEstacion. De click en ACEPTAR para salir del programa";
                 mensaje.textBoxAlert_Message.Text = Ruta.noRuta;
@@ -126,7 +179,7 @@ namespace InterfazUsuario
                    //El mensaje cambia segun los archivos detectados 
                     MensajeAlerta mensaje = new MensajeAlerta();
                     mensaje.Show();
-                    Ruta.noRuta = "Ruta raiz del documento usuarios.txt no encontrada" +
+                    Ruta.noRuta = "Ruta del documento usuarios.txt no encontrada" +
                         ", favor de comprobar su exitenicia y/o cambiar la direccion dentro de program.cs" +
                         " en la variable: rutaUsuario... De click en ACEPTAR para salir del programa";
                     mensaje.textBoxAlert_Message.Text = Ruta.noRuta;
@@ -140,7 +193,7 @@ namespace InterfazUsuario
                     {
                         MensajeAlerta mensaje = new MensajeAlerta();
                         mensaje.Show();
-                        Ruta.noRuta = "Ruta raiz del documento estacion.txt no encontrada" +
+                        Ruta.noRuta = "Ruta  del documento estacion.txt no encontrada" +
                             ", favor de comprobar su exitenicia y/o cambiar la direccion dentro de program.cs" +
                             " en la variable: rutaEstacion... De click en ACEPTAR para salir del programa";
                         mensaje.textBoxAlert_Message.Text = Ruta.noRuta;
@@ -150,20 +203,23 @@ namespace InterfazUsuario
                 }
             }          
         }
-
+        //Eventos que personalizan el botón Salir 
         private void btnLog_Salir_MouseHover(object sender, EventArgs e)
         {
+            //cambia de color si estamos sobre él
             btnLog_Salir.ForeColor = Color.Red;
         }
 
         private void btnLog_Salir_MouseLeave(object sender, EventArgs e)
         {
+            //se vuelve al color original se nos vamos
             btnLog_Salir.ForeColor = Color.White;
         }
 
+        //Evento que despliega un mensaje de alerta para indicar al usuario que la funcionalidad aún no esta desarrollada
         private void linkLabelLog_RecuperarPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-             
+            //Ocurre cuando se intenta acceder  la funcionalidad contraseña
             MensajeAlerta mensaje = new MensajeAlerta();
             mensaje.Show();
             mensaje.textBoxAlert_Message.Text = "Opción no disponible";
