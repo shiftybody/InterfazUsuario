@@ -163,7 +163,6 @@ namespace InterfazUsuario
             this.btnMod_Buscar.TabIndex = 35;
             this.btnMod_Buscar.Text = "BUSCAR";
             this.btnMod_Buscar.UseVisualStyleBackColor = false;
-            this.btnMod_Buscar.TextChanged += new System.EventHandler(this.btnMod_Buscar_TextChanged);
             this.btnMod_Buscar.Click += new System.EventHandler(this.btnMod_Buscar_Click);
             // 
             // textBoxMod_Date

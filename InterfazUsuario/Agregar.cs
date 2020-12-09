@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -20,6 +13,8 @@ namespace InterfazUsuario
 
         private void form_Altas_Load(object sender, EventArgs e)
         {
+            //Utilizamos la clase StreamReader para leer y obtener
+            //el ultimo ID correspondiente
             string ruta = Ruta.rutaEstacion;
             StreamReader lectura = File.OpenText(ruta);
             string contenido = lectura.ReadToEnd();
@@ -27,26 +22,28 @@ namespace InterfazUsuario
 
             string[] ids = contenido.Split('\n');
             int id = ids.Length - 1;
-
+            // sumamos 1 al id y lo despleguamos en su texbox
             id ++ ;
 
             textBoxAltas_ID.Text = Convert.ToString(id);
 
         }
-
+        //Evento que nos permite detectar cuando hemos seleccionado una fecha en el calenario
         private void monthCalendarAltas_Date_DateSelected(object sender, DateRangeEventArgs e)
         {
+            //La fecha seleccionada se le asigna a un texbox
             textBoxAltas_Date.Text = monthCalendarAltas_Date.SelectionRange.Start.ToShortDateString();
         }
-
+        // El formulario cuenta con un checkBox que sirve para saber si el valor de evaporación es nulo
         private void checkBoxAltas_Nulo_CheckedChanged(object sender, EventArgs e)
-        {
+        {   // si el check box no ha sido seleccionado se mostrara el valor ingresado en un textbox
             if(checkBoxAltas_Nulo.Checked == false)
             {
                 textBoxAltas_Evap.Enabled = true;
                 textBoxAltas_Evap.Text = "";
                 textBoxAltas_Evap.Focus();
             }
+            // si el check box ha sido seleccionado, el texbox se desabilitara
             else
             {
                 textBoxAltas_Evap.Enabled = false;

@@ -182,7 +182,6 @@ namespace InterfazUsuario
             this.panel_Contenedor.Name = "panel_Contenedor";
             this.panel_Contenedor.Size = new System.Drawing.Size(760, 461);
             this.panel_Contenedor.TabIndex = 2;
-            this.panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Contenedor_Paint);
             // 
             // form_Menu
             // 
