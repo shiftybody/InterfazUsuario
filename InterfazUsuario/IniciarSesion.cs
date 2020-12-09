@@ -95,9 +95,9 @@ namespace InterfazUsuario
                     labelLog_Message.Text = "               Contraseña incorrecta";
                     labelLog_Message.Visible = true;
                     passLogLine.ForeColor = Color.Red;
-                }
-                else // si ninguno de los campos ingresados se encuentran en usuarios.txt
-                if (!(usuario[0].Trim().Equals(user.ToLower())) && !(usuario[1].Trim().Equals(password)))
+
+                }// si ninguno de los campos ingresados se encuentran en usuarios.txt 
+                else if (!(usuario[0].Trim().Equals(user.ToLower())) && !(usuario[1].Trim().Equals(password)))
                 {
                     labelLog_Message.Text = "   Favor de verificar datos ingresados";
                     labelLog_Message.Visible = true;

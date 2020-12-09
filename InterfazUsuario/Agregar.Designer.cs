@@ -128,7 +128,7 @@ namespace InterfazUsuario
             // 
             this.labelAltas_Message.AutoSize = true;
             this.labelAltas_Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAltas_Message.Location = new System.Drawing.Point(400, 309);
+            this.labelAltas_Message.Location = new System.Drawing.Point(351, 316);
             this.labelAltas_Message.Name = "labelAltas_Message";
             this.labelAltas_Message.Size = new System.Drawing.Size(189, 16);
             this.labelAltas_Message.TabIndex = 18;

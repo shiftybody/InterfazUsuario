@@ -48,6 +48,8 @@ namespace InterfazUsuario
             this.textBoxMod_Tmax = new System.Windows.Forms.TextBox();
             this.textBoxMod_Tmin = new System.Windows.Forms.TextBox();
             this.checkBoxMod_Nulo = new System.Windows.Forms.CheckBox();
+            this.btnAnswer = new System.Windows.Forms.Button();
+            this.btnAnswerN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelMod_Message
@@ -133,6 +135,9 @@ namespace InterfazUsuario
             // 
             // btnMod_Eliminar
             // 
+            this.btnMod_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnMod_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnMod_Eliminar.ForeColor = System.Drawing.Color.Black;
             this.btnMod_Eliminar.Location = new System.Drawing.Point(386, 367);
             this.btnMod_Eliminar.Name = "btnMod_Eliminar";
             this.btnMod_Eliminar.Size = new System.Drawing.Size(125, 45);
@@ -228,12 +233,48 @@ namespace InterfazUsuario
             this.checkBoxMod_Nulo.UseVisualStyleBackColor = true;
             this.checkBoxMod_Nulo.CheckedChanged += new System.EventHandler(this.checkBoxMod_Nulo_CheckedChanged);
             // 
+            // btnAnswer
+            // 
+            this.btnAnswer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAnswer.FlatAppearance.BorderSize = 0;
+            this.btnAnswer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnAnswer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswer.Location = new System.Drawing.Point(532, 367);
+            this.btnAnswer.Name = "btnAnswer";
+            this.btnAnswer.Size = new System.Drawing.Size(76, 45);
+            this.btnAnswer.TabIndex = 43;
+            this.btnAnswer.Text = "SI";
+            this.btnAnswer.UseVisualStyleBackColor = false;
+            this.btnAnswer.Visible = false;
+            this.btnAnswer.Click += new System.EventHandler(this.btnAnswer_Click);
+            // 
+            // btnAnswerN
+            // 
+            this.btnAnswerN.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAnswerN.FlatAppearance.BorderSize = 0;
+            this.btnAnswerN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnAnswerN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAnswerN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnswerN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswerN.Location = new System.Drawing.Point(624, 367);
+            this.btnAnswerN.Name = "btnAnswerN";
+            this.btnAnswerN.Size = new System.Drawing.Size(76, 45);
+            this.btnAnswerN.TabIndex = 44;
+            this.btnAnswerN.Text = "NO";
+            this.btnAnswerN.UseVisualStyleBackColor = false;
+            this.btnAnswerN.Visible = false;
+            this.btnAnswerN.Click += new System.EventHandler(this.btnAnswerN_Click);
+            // 
             // form_modBajas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(755, 450);
+            this.Controls.Add(this.btnAnswerN);
+            this.Controls.Add(this.btnAnswer);
             this.Controls.Add(this.checkBoxMod_Nulo);
             this.Controls.Add(this.textBoxMod_Tmin);
             this.Controls.Add(this.textBoxMod_Tmax);
@@ -256,6 +297,7 @@ namespace InterfazUsuario
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "form_modBajas";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.form_modBajas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,5 +324,7 @@ namespace InterfazUsuario
         private System.Windows.Forms.TextBox textBoxMod_Tmax;
         private System.Windows.Forms.TextBox textBoxMod_Tmin;
         private System.Windows.Forms.CheckBox checkBoxMod_Nulo;
+        private System.Windows.Forms.Button btnAnswer;
+        private System.Windows.Forms.Button btnAnswerN;
     }
 }
